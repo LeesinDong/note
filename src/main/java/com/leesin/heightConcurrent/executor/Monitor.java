@@ -15,7 +15,8 @@ public class Monitor extends ThreadPoolExecutor {
     //保存任务开始执行的时间，当任务结束是，用任务结束时间减去开始时间计算任务执行时间
     private ConcurrentHashMap<String, Date> startTimes;
 
-    public Monitor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue<Runnable> workQueue) {
+    public Monitor(int corePoolSize, int maximumPoolSize, long keepAliveTime,
+                   TimeUnit unit, BlockingQueue<Runnable> workQueue) {
         super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
         this.startTimes = new ConcurrentHashMap<>();
     }
@@ -51,7 +52,7 @@ public class Monitor extends ThreadPoolExecutor {
         System.out.println("任务总数 " + this.getTaskCount());
         System.out.println("最大允许的线程数 " + this.getMaximumPoolSize());
         System.out.println("线程空闲时间 " + this.getKeepAliveTime(TimeUnit.MILLISECONDS));
-        System.out.println("");
+        System.out.println("当前排队线程数" + this.getQueue().size());
         super.afterExecute(r, t);
     }
 
