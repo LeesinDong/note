@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第二讲;
 
 import com.leesin.java8.wangwenjun.第一讲.Apple;
 
@@ -26,15 +26,16 @@ public class LambdaExpression {
 
         list.sort(byColor);
 
+
+        /**
+         *                           参数列表               lambda body
+         */
         Comparator<Apple> byColor2 = (o1, o2) -> o1.getColor().compareTo(o2.getColor());
 
+
         Function<String, Integer> flambda = s -> s.length();
-
         Predicate<Apple> p = (Apple a) -> a.getColor().equals("green");
-
         Runnable r = ()->{};
-
-
         Function<Apple,Boolean> f = (a)->a.getColor().equals("green");
 
     }
