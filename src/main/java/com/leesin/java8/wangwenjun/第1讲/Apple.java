@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun.第一讲;
+package com.leesin.java8.wangwenjun.第1讲;
 
 /**
  * Created by wangwenjun on 2016/10/12.

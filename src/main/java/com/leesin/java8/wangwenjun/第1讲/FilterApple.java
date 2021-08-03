@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun.第一讲;
+package com.leesin.java8.wangwenjun.第1讲;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ public class FilterApple {
 
 
     /**
-     * 只有一个方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，多个方法@FunctionalInterface会报错
+     * 只有一个抽象方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，多个方法@FunctionalInterface会报错
      * 可以包含default 和 static方法，即使存在，也是认为是FunctionalInterface的，但是普通方法就不行
      */
     @FunctionalInterface
@@ -23,6 +23,14 @@ public class FilterApple {
          * default方法
          */
         default void print(String var) {
+            System.out.println(var);
+        }
+
+        /**
+         * static方法
+         * @param var
+         */
+        static void print1(String var) {
             System.out.println(var);
         }
 

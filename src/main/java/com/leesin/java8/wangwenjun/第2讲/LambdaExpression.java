@@ -1,6 +1,6 @@
-package com.leesin.java8.wangwenjun.第二讲;
+package com.leesin.java8.wangwenjun.第2讲;
 
-import com.leesin.java8.wangwenjun.第一讲.Apple;
+import com.leesin.java8.wangwenjun.第1讲.Apple;
 
 import java.util.Collections;
 import java.util.Comparator;

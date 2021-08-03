@@ -1,6 +1,6 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第3讲;
 
-import com.leesin.java8.wangwenjun.第一讲.Apple;
+import com.leesin.java8.wangwenjun.第1讲.Apple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,41 +13,67 @@ import java.util.function.*;
  */
 public class LambdaUsage {
 
+    /**
+     * 子interface extends 父interface ，只有两个合起来只有一个的时候，才是@functionalInterface
+     */
 
+
+    /**
+     * 入参从别的地方（这里的前面的List提供，predicate、consumer只提供关于入参的运算）
+     */
+
+    /**
+     * predicate
+     */
     private static List<Apple> filter(List<Apple> source, Predicate<Apple> predicate) {
         List<Apple> result = new ArrayList<>();
         for (Apple a : source) {
-            if (predicate.test(a))
+            if (predicate.test(a)) {
                 result.add(a);
+            }
         }
         return result;
 
     }
 
+    /**
+     * LongPredicate
+     */
     private static List<Apple> filterByWeight(List<Apple> source, LongPredicate predicate) {
         List<Apple> result = new ArrayList<>();
         for (Apple a : source) {
-            if (predicate.test(a.getWeight()))
+            if (predicate.test(a.getWeight())) {
                 result.add(a);
+            }
         }
         return result;
     }
 
+    /**
+     * BiPredicate
+     */
     private static List<Apple> filterByBiPredicate(List<Apple> source, BiPredicate<String, Long> predicate) {
         List<Apple> result = new ArrayList<>();
         for (Apple a : source) {
-            if (predicate.test(a.getColor(), a.getWeight()))
+            if (predicate.test(a.getColor(), a.getWeight())) {
                 result.add(a);
+            }
         }
         return result;
     }
 
+    /**
+     * consumer
+     */
     private static void simpleTestConsumer(List<Apple> source, Consumer<Apple> consumer) {
         for (Apple a : source) {
             consumer.accept(a);
         }
     }
 
+    /**
+     * biConsumer
+     */
     private static void simpleBiConsumer(String c, List<Apple> source, BiConsumer<Apple, String> consumer) {
         for (Apple a : source) {
             consumer.accept(a, c);
@@ -65,7 +91,7 @@ public class LambdaUsage {
 
     public static void main(String[] args) {
 
-        /*Runnable r1 = () -> System.out.println("Hello");
+        Runnable r1 = () -> System.out.println("Hello");
 
         Runnable r2 = new Runnable() {
             @Override
@@ -73,10 +99,12 @@ public class LambdaUsage {
                 System.out.println("Hello");
             }
         };
-
+        /**
+         * 一样的效果
+         */
         process(r1);
         process(r2);
-        process(() -> System.out.println("Hello"));*/
+        process(() -> System.out.println("Hello"));
 
 
         List<Apple> list = Arrays.asList(new Apple("green", 120), new Apple("red", 150));
@@ -128,7 +156,7 @@ public class LambdaUsage {
             }
         };*/
 
-        Runnable r2 = () -> System.out.println(i);
+        Runnable r3 = () -> System.out.println(i);
 
         BiFunction<String, Integer, Integer> stringIntegerIntegerBiFunction = Integer::parseInt;
         list.sort(Comparator.comparing(Apple::getWeight));
@@ -158,7 +186,7 @@ public class LambdaUsage {
         return supplier.get();
     }
 
-    interface Test {
+    interface       Test {
         public void say(String s);
     }
 }
