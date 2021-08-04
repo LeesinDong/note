@@ -29,7 +29,8 @@ public class LambdaExpression {
 
         /**
          *                           参数列表               lambda body（如果是{}， 必须有return，如果有return，必须用{}包着）
-         *          如；（Integer i） -> return "Alix";    //非法的
+         *          如；
+         *          (Integer i) -> return "Alix";    //非法的
          *          (Integer i) -> {return "Alix"};  // 合法的。
          */
         Comparator<Apple> byColor2 = (o1, o2) -> o1.getColor().compareTo(o2.getColor());

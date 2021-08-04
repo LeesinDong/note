@@ -14,12 +14,12 @@ import java.util.function.*;
 public class LambdaUsage {
 
     /**
-     * 子interface extends 父interface ，只有两个合起来只有一个的时候，才是@functionalInterface
+     * 子interface extends 父interface ，只有两个合起来只有一个(父子一共一个)的时候，才是@functionalInterface
      */
 
 
     /**
-     * 入参从别的地方（这里的前面的List提供，predicate、consumer只提供关于入参的运算）
+     * 入参从别的地方（这里的前面的List提供，predicate、consumer只提供关于入参的运算（实际实现））
      */
 
     /**

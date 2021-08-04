@@ -10,12 +10,84 @@
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorIntroduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorIntroduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/MethodReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第一讲/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/Apple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第一讲/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/FilterApple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第二讲/LambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲/LambdaExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/AccumulatorRecursiveAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/AccumulatorRecursiveAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/FilterApple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲/LambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲/LambdaExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/executor/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/wwj/FilterApple$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/wwj/FilterApple$AppleFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/wwj/FilterApple$GreenAnd160WeightFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/wwj/FilterApple$YellowLess150WeightFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/wwj/FilterApple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/AccumulatorRecursiveAction$AccumulatorHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/AccumulatorRecursiveAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/AccumulatorRecursiveTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorIntroduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorsAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorsAction2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorsAction3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CollectorsAction4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CompletableFutureInAction5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/ComplexApple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CreateStream$Obj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CreateStream$ObjSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CreateStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/CustomerCollectorAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DefaultInAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DefaultInAction$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DefaultInAction$B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DefaultInAction$C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/DefaultInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Dish$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/ForkJoinPoolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction$Callable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction$Future.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3$Callable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3$Completable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3$Future.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/FutureInAction3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Insurance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/LambdaExpression$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/LambdaExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/LambdaUsage$Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/LambdaUsage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/MethodReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/NullPointerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/NumericStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/OptionalInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/OptionalUsage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/ParallelProcessing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/SimpleStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/SpliteratorInAction$MySpliteratorText$MySpliterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/SpliteratorInAction$MySpliteratorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/SpliteratorInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamInAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/StreamReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/ThreeFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/ToListCollector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Trader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangwenjun/java8/Transaction.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +115,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/base/zone/ZoneTypeEnum.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/ServletResponse.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/restock/service/RestockServiceRpc.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/util/CollectionUtils.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/WmsBaseEnum.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -52,6 +140,7 @@
   </component>
   <component name="ProjectId" id="1jBpPQ801dr3z0lkM3sLG2onYZd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -87,7 +176,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/lambda" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MonitorTest">
+  <component name="RunManager" selected="Application.AccumulatorRecursiveAction">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -101,6 +190,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccumulatorRecursiveAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.AccumulatorRecursiveAction" />
+      <module name="note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonitorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leesin.heightConcurrent.executor.MonitorTest" />
       <module name="note" />
@@ -110,13 +206,6 @@
     </configuration>
     <configuration name="StreamMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangwenjun.java8.StreamMap" />
-      <module name="note" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.qlExpress.Test" />
       <module name="note" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,19 +226,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test (2)" />
       <item itemvalue="Application.groupBy (1)" />
       <item itemvalue="Application.groupBy (2)" />
       <item itemvalue="Application.StreamMap" />
       <item itemvalue="Application.MonitorTest" />
+      <item itemvalue="Application.AccumulatorRecursiveAction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccumulatorRecursiveAction" />
         <item itemvalue="Application.MonitorTest" />
         <item itemvalue="Application.StreamMap" />
         <item itemvalue="Application.groupBy (2)" />
         <item itemvalue="Application.groupBy (1)" />
-        <item itemvalue="Application.Test (2)" />
       </list>
     </recent_temporary>
   </component>

@@ -111,7 +111,7 @@ public class FilterApple {
         System.out.println(yellowList);*/
 
         /**
-         * Functional接口的唯一方法的 参数 + 接口具体实现
+         * Functional接口的唯一方法的 参数(这里是形参) + 接口具体实现
          */
         List<Apple> lambdaResult = findApple(list, apple -> "green".equals(apple.getColor()));
 
