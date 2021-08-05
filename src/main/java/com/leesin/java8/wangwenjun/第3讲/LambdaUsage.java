@@ -12,6 +12,12 @@ import java.util.function.*;
  * Created by wangwenjun on 2016/10/15.
  */
 public class LambdaUsage {
+    /**
+     * 本质：Predicate、consumer、function、supplier等本质就是一个[需要参数的lambda表达式]
+     * 1 可以将 Predicate、consumer、function、supplier 当做参数封装到方法内, 然后在调用处再给具体实现, 也可以直接使用而不封装
+     * 需要在lambda外面包一层上下有其他实现的就包成方法， 不需要的就直接用
+     * 2 本质就是 通过predicate.test(a)、consumer.accept(a)、function.apply(a)、 supplier.get() 等[传入外部参数]进行调用
+     */
 
     /**
      * 子interface extends 父interface ，只有两个合起来只有一个(父子一共一个)的时候，才是@functionalInterface
@@ -80,12 +86,25 @@ public class LambdaUsage {
         }
     }
 
+    /**
+     * function
+     */
     private static String testFunction(Apple apple, Function<Apple, String> fun) {
         return fun.apply(apple);
     }
 
+    /**
+     * BiFunction
+     */
     private static Apple testBiFunction(String color, long weight, BiFunction<String, Long, Apple> fun) {
         return fun.apply(color, weight);
+    }
+
+    /**
+     * supplier
+     */
+    private static Apple createApple(Supplier<Apple> supplier) {
+        return supplier.get();
     }
 
 
@@ -129,6 +148,9 @@ public class LambdaUsage {
         String result3 = testFunction(new Apple("yellow", 100), (a) -> a.toString());
         System.out.println(result3);
 
+        /**
+         * intFunction ==== 可以发现Function等，本质就是一个lambda
+         */
         IntFunction<Double> f = i -> i * 100.0d;
         double result4 = f.apply(10);
         System.out.println("================");
@@ -138,7 +160,8 @@ public class LambdaUsage {
         Apple a = testBiFunction("Blue", 130, (s, w) -> new Apple(s, w));
         System.out.println(a);
 
-        Supplier<String> s = String::new;   //method inference.
+        //method inference.
+        Supplier<String> s = String::new;
         System.out.println(s.get().getClass());
 
         System.out.println("================");
@@ -146,17 +169,30 @@ public class LambdaUsage {
         Apple a2 = createApple(() -> new Apple("Green", 100));
         System.out.println(a2);
 
-        int i = 0;
-
-        /*Runnable r = new Runnable() {
+        /**
+         * 关于 lambda里面 操作的值 [默认都是final的]
+         **/
+        final int i = 0;
+        Runnable r = new Runnable() {
             @Override
             public void run() {
-                //i++;
+                // 内部类里面的i必须是final类型的
+                // i++;
+
+                /**
+                 * 这里使用i，即使上面int i = 0, 上面默认也是加了final的,即 final int i = 0;
+                 */
                 System.out.println(i);
             }
-        };*/
+        };
+        // 如果上面 System.out.println(i); 使用了i，默认变成了final的，则即使上面int i = 0;这里也会报错，因为变成了final
+        // i++;
 
+        // 匿名内部类也是lambda表达式，这里同样不能++
+        // Runnable r3 = () -> i++;
         Runnable r3 = () -> System.out.println(i);
+
+        //=====================
 
         BiFunction<String, Integer, Integer> stringIntegerIntegerBiFunction = Integer::parseInt;
         list.sort(Comparator.comparing(Apple::getWeight));
@@ -182,9 +218,7 @@ public class LambdaUsage {
         r.run();
     }
 
-    private static Apple createApple(Supplier<Apple> supplier) {
-        return supplier.get();
-    }
+
 
     interface       Test {
         public void say(String s);
