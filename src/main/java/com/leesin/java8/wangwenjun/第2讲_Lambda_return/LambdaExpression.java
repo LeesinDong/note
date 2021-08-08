@@ -1,6 +1,6 @@
-package com.leesin.java8.wangwenjun.第2讲;
+package com.leesin.java8.wangwenjun.第2讲_Lambda_return;
 
-import com.leesin.java8.wangwenjun.第1讲.Apple;
+import com.leesin.java8.wangwenjun.第1讲_FunctionalInterface.Apple;
 
 import java.util.Collections;
 import java.util.Comparator;

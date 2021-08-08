@@ -8,9 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
+    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorIntroduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorIntroduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_/MethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_FunctionalInterface/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_FunctionalInterface/FilterApple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲/LambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲_Lambda_return/LambdaExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲_四个function_特殊的Functional/LambdaUsage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

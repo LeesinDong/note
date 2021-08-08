@@ -1,6 +1,8 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第4讲_;
 
-import com.leesin.java8.wangwenjun.第1讲.Apple;
+import com.leesin.java8.wangwenjun.ComplexApple;
+import com.leesin.java8.wangwenjun.ThreeFunction;
+import com.leesin.java8.wangwenjun.第1讲_FunctionalInterface.Apple;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -25,26 +27,32 @@ public class MethodReference {
         useConsumer(System.out::println, "Hello Wangwenjun");
 
         List<Apple> list = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
-
         System.out.println(list);
-
         list.sort((a1, a2) -> a1.getColor().compareTo(a2.getColor()));
-
         System.out.println(list);
-
         list.stream().forEach(a -> System.out.println(a));
-
         System.out.println("==========================");
         list.stream().forEach(System.out::println);
 
+        /**
+         * 方法引用 = lambda，都需要传入参数
+         * Functional = 方法引用 or lambda
+         */
+        /**
+         * 1 类的静态方法推导
+         * Integer.parseInt(a)     类的方法
+         */
         int value = Integer.parseInt("123");
-
+        Function<String, Integer> f1 = (a) -> Integer.parseInt(a);
         Function<String, Integer> f = Integer::parseInt;
-
         Integer result = f.apply("123");
         System.out.println(result);
 
-
+        /**
+         * 2 实例方法，即普通类方法
+         * a.charAt(1)             实例的类的方法
+         */
+        BiFunction<String, Integer, Character> f5 = (a, b) -> a.charAt(b);
         BiFunction<String, Integer, Character> f2 = String::charAt;
         Character c = f2.apply("hello", 2);
         System.out.println(c);

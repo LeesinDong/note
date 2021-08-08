@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun.第1讲;
+package com.leesin.java8.wangwenjun.第1讲_FunctionalInterface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +13,11 @@ public class FilterApple {
     /**
      * 只有一个抽象方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，多个方法@FunctionalInterface会报错
      * 可以包含default 和 static方法，即使存在，也是认为是FunctionalInterface的，但是普通方法就不行
+     */
+    /**
+     * Lambda是Functional的具体实现，Predicate是特殊的Functional
+     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】=======
+     * 方法引用 == Lambda
      */
     @FunctionalInterface
     public interface AppleFilter {
@@ -36,6 +41,9 @@ public class FilterApple {
 
     }
 
+    /**
+     * 这里 AppleFilter 本质和 predicate等是一样的
+     */
     public static List<Apple> findApple(List<Apple> apples, AppleFilter appleFilter) {
         List<Apple> list = new ArrayList<>();
 

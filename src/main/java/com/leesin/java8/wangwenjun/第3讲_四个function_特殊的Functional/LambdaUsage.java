@@ -1,6 +1,6 @@
-package com.leesin.java8.wangwenjun.第3讲;
+package com.leesin.java8.wangwenjun.第3讲_四个function_特殊的Functional;
 
-import com.leesin.java8.wangwenjun.第1讲.Apple;
+import com.leesin.java8.wangwenjun.第1讲_FunctionalInterface.Apple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
