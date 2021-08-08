@@ -15,8 +15,8 @@ public class FilterApple {
      * 可以包含default 和 static方法，即使存在，也是认为是FunctionalInterface的，但是普通方法就不行
      */
     /**
-     * Lambda是Functional的具体实现，Predicate是特殊的Functional
-     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】=======
+     * Lambda是Functional的具体实现，Functional相当于只是一个接口、架子；Predicate是特殊的Functional
+     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】 = 方法引用    即 接口方法 = 接口方法的具体实现=======
      * 方法引用 == Lambda
      */
     @FunctionalInterface

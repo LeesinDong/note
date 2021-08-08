@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第4讲_方法引用_consumer例子;
 
 /**
  * Created by wangwenjun on 2016/10/16.
