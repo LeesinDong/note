@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第5讲_stream;
 
 /**
  * Created by wangwenjun on 2016/10/18.

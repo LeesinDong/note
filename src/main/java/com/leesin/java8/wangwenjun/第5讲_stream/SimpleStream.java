@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第5讲_stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,9 +39,9 @@ public class SimpleStream {
 
         List<String> result = menu.stream().filter(d -> {
 
-            System.out.println("filtering->" + d.getName());
-            return d.getCalories() > 300;
-        })
+                    System.out.println("filtering->" + d.getName());
+                    return d.getCalories() > 300;
+                })
                 .map(d -> {
                     System.out.println("map->" + d.getName());
                     return d.getName();
@@ -59,7 +59,17 @@ public class SimpleStream {
 
     }
 
+    /**
+     * 通过stream达到效果
+     *
+     * @param menu menu
+     * @return {@link List}
+     */
     private static List<String> getDishNamesByStream(List<Dish> menu) {
+        /**
+         * 并行流
+         * jconsole 发现会多几个fork join 线程，通过fork join实现并行流的
+         */
         return menu.parallelStream().filter(d -> {
                     try {
                         Thread.sleep(10000);
@@ -68,6 +78,10 @@ public class SimpleStream {
                     }
                     return d.getCalories() < 400;
                 }
+                /**
+                 * comparing(Dish::getCalories) 等效于 Comparator.comparing(Dish::getCalories)
+                 * collect(toList()) 等效于 collect(Collectors.toList())
+                 */
         ).sorted(comparing(Dish::getCalories)).map(Dish::getName).collect(toList());
     }
 
@@ -76,8 +90,9 @@ public class SimpleStream {
 
         //filter and get calories less 400
         for (Dish d : menu) {
-            if (d.getCalories() < 400)
+            if (d.getCalories() < 400) {
                 lowCalories.add(d);
+            }
         }
 
         try {
@@ -87,6 +102,9 @@ public class SimpleStream {
         }
 
         //sort
+        /**
+         * Collections 的 sort方法
+         */
         Collections.sort(lowCalories, (d1, d2) -> Integer.compare(d1.getCalories(), d2.getCalories()));
 
         List<String> dishNameList = new ArrayList<>();

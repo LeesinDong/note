@@ -1,5 +1,7 @@
 package com.leesin.java8.wangwenjun;
 
+import com.leesin.java8.wangwenjun.第5讲_stream.Dish;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

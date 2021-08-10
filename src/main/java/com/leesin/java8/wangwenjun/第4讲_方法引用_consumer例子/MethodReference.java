@@ -25,9 +25,13 @@ public class MethodReference {
 
 
         /**
+         * 总结：
          * 方法引用 = lambda，都需要传入参数
          * Functional = 方法引用 or lambda
+         *
+         * 方法引用 ----> 就是 lambda变体 ----> lambda中 【对象.方法(参数)】 中的 【对象、参数】用apply传入
          */
+
         /**
          * 1 【类的静态方法】
          * Integer.parseInt(a)     类的方法
@@ -39,9 +43,11 @@ public class MethodReference {
         System.out.println(result);
 
         /**
+         * 2 3 本质一样，都是调用对象方法，只不过2是 对象所属的类::方法 并且需要传入【对象本身】作为参数
+         */
+        /**
          * 2 实例方法，即普通【类的实例方法】
          * String::charAt  ---> apply(stringValue, 2)             实例的类的方法
-         *
          */
         BiFunction<String, Integer, Character> f5 = (a, b) -> a.charAt(b);
         BiFunction<String, Integer, Character> f2 = String::charAt;
@@ -57,10 +63,6 @@ public class MethodReference {
         Function<Integer, Character> f3 = stringValue::charAt;
         Character c2 = f3.apply(4);
         System.out.println(c2);
-
-        /**
-         * 2 3 本质一样，都是调用对象方法，只不过2是 对象所属的类::方法 并且需要传入【对象本身】作为参数
-         */
 
 
         /**

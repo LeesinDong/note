@@ -6,6 +6,8 @@ package com.leesin.java8.wangwenjun;
  * QQ交流群:286081824
  ***************************************/
 
+import com.leesin.java8.wangwenjun.第5讲_stream.Dish;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
