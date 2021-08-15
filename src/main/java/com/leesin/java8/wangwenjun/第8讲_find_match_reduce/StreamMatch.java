@@ -23,6 +23,7 @@ public class StreamMatch {
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         matched = stream.anyMatch(i -> i > 6);
         System.out.println(matched);
+        System.out.println(matched);
 
         /**
          * noneMatch 没有一个元素满足这个条件，都不符合这个条件
