@@ -10,6 +10,7 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 /**
  * Created by wangwenjun on 2016/10/16.
@@ -118,6 +119,14 @@ public class MethodReference {
          */
         useConsumer(s1 -> System.out.println(s1), "Hello Alex");
         useConsumer(System.out::println, "Hello Wangwenjun");
+
+        /**
+         * sum
+         */
+        Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
+        Integer result2 = stream.reduce(0, Integer::sum);
+        // 等效于下面
+        Integer result1 = stream.reduce(0, (a, b) -> a + b);
     }
 
     private static <T> void useConsumer(Consumer<T> consumer, T t) {

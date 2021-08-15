@@ -8,7 +8,340 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="" />
+    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_QLExpress_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第7讲_filter_distinct_skip_limit_map_flatmap/StreamFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第7讲_filter_distinct_skip_limit_map_flatmap/StreamMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamReduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_consumer例子/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_consumer例子/MethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第6讲_创建stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第6讲_创建stream/CreateStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LRUCache$CacheNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LRUCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/ListDG$Vertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/ListDG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/ListNDG$Vertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/ListNDG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/MatrixDG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/greph/MatrixNDG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/Interview1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/Interview2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/myTest/Interview1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/myTest/Interview2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/myTest/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/myTest/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/list/myTest/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/other/FibonacciDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/queue/MyQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/queue/TwoStackOneQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/queue/myTest/MyQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/queue/myTest/TwoStackOneQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/search/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/search/test/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/Bubble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/MergetSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/SelectSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/ShellSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/insertSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/MergetSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/SelectSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/ShellSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/sort/test/inserSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/stack/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/stack/myTest/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/Depth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/Interview.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/LowestAncestor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/Traverse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/myTest/Depth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/myTest/Interview.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/myTest/LowestAncestor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/arithmetic/tree/myTest/Traverse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/basic/EqualsDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/basic/HashMapDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/basic/IteratorDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/SampleClass$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/SampleClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/Test$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/Test$3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/Test$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/cglib/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/eg1/Sample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/eg1/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/eg1/TestSub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/eg2/SingtonDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/egme/Father.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/egme/Son.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/egme/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/classloader/egme/Write.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/clone/CloneDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/clone/Email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/clone/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/configuration/GenericConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/configuration/PropertiesDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/designmode/sigleton/HungrySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/designmode/sigleton/LazySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/FastJsonSerilizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/JavaSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/JavaSerializerWriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/ProtobufDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/SerialDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/SocketClientConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/SocketServerProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos$User$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos$User$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos$UserOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/UserProtos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/serializable/XStreamSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/socket/ClientDuplext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/socket/ServerDuplex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/socket/client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/distributed/socket/server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/elasticSearchClient/es/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/elasticSearchClient/es/ElasticSearchClientTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/elasticSearchClient/es/SearchIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/springdata/entity/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/springdata/repositories/ArticleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/es/springdata/test/SpringDataElasticSearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/exception/ExceptionDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/exception/IUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/exception/RejectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/exception/SafeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/ConcurrentHashMap/ConcurrentHashMapDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/CyclicBarrier/CycliBarrierDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/CyclicBarrier/DataImportThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/Interrupt/InterruptDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/Interrupt/InterruptDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/Interrupt/InterruptDemo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/cas/AtomicStampedRefrenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/condition/ConditionDemoSignal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/condition/ConditionDemoWait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/condition/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/countDownLatch/CountDownLatchDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/countDownLatch/HeightConcurrentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/executor/Callable_Future.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/executor/MonitorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/executor/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/executor/submitDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/forkJoin/CountTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/future/FutureTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinReleaseLock$ThreadA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinReleaseLock$ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinReleaseLock$ThreadC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinReleaseLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinSourceCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/JoinTester01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/join/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/lock/ReentrantLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/lock/ReentrantReadWriteLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/lock/StempedLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/newThread/ForCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/newThread/ForRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/newThread/ForThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/park/ParkDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/practic/ReentantLockAndConditionQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/semaphore/Test$Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/semaphore/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/sixStatus/ThreadStatus$BlockedDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/sixStatus/ThreadStatus$BlockedDemoForWait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/sixStatus/ThreadStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/synchronize/synchronizedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/threadLocal/Demo$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/threadLocal/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/threadLocal/ThreadLocalDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/volatile_/VolatileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/producerConsumer/DDDD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/producerConsumer/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/producerConsumer/GetTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/producerConsumer/SetTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/waitNotify/producerConsumer/Vendor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/heightConcurrent/yield/YieldTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/integer/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/integer/Person1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/integer/Swap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/integer/TransferTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/bio/BIOServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/bio/BIOclient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/client/Client$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/client/HiHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/server/HelloHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/server/Server$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/netty/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/io/nio/NIOServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_01/MyInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_01/MyInterfaceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_01/MyInterfaceImplOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_01/MyInterfaceImplTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_01/MyInterfaceSon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_02/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_02/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_02/InterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_02/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_03/InterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/itheima_03/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_01/MyInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_01/MyInterfaceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_01/MyInterfaceImplOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_01/MyInterfaceImplTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_01/MyInterfaceSon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_02/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_02/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_02/InterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_02/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_03/InterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/Interface/myInterface/src/com/itheima_03/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_01/MyInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_01/MyInterfaceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_02/ComparatorDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_02/RunnableDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_02/RunnableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_03/SupplierDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_03/SupplierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_04/ConsumerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_04/ConsumerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_05/PredicateDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_05/PredicateDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_05/PredicateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_06/FunctionDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/functionInterface/itheima_06/FunctionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_01/LambdaDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_01/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_02/Eatable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_02/EatableDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_02/EatableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_02/EatableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_03/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_03/FlyableDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_03/FlyableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_04/Addable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_04/AddableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_05/Addable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_05/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_05/LambdaDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_06/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_06/LambdaDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_07/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_07/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_07/LambdaDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_07/LambdaDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/lambda/itheima_07/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_01/Printable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_01/PrintableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_02/Printable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_02/PrintableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_03/Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_03/ConverterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_04/PrintString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_04/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_04/PrinterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_05/MyString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_05/MyStringDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_06/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_06/StudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/methodReference/itheima_06/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_01/StreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_02/StreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_03/StreamDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_03/StreamDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_03/StreamDemo03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_03/StreamDemo04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_03/StreamDemo05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_04/StreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_05/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_05/StreamTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/itheima_06/CollectDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/max$Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/stream/max.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/compare/json/Compare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/can/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/can/ToStringUtils$ToStringTokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/can/ToStringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtils$TokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtils$TypeValueUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtilsTest$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtilsTest$DemoBean$DemoBeanBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtilsTest$DemoBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/object2json/cannot/ToStringUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/test/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/test/App1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/test/BizDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/test/ReviewLaunchReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/json/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/lock/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/orm/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/polymorphism/davis/Father.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/polymorphism/davis/Son.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/polymorphism/staticmethod/M.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/polymorphism/staticmethod/N.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/polymorphism/staticmethod/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/DynamicProxy/cglib/CglibDynamicProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/DynamicProxy/jdk/DynamicProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/staticProxy/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/staticProxy/PaymentLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/staticProxy/ProxyDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/staticProxy/ThridCHannelProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/proxy/staticProxy/ThridChannelPayment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/PhantomRefrenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/SoftRefrenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/StrongRefrenceDemo$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/StrongRefrenceDemo$Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/StrongRefrenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/refrence/WeakReferenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/serialize/SerialDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/serialize/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/spring/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/spring/DemoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/spring/DemoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/spring/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/stringUtil/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/test/IntegerNPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/test/StringFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/ZkClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/apiStudy/AclDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/apiStudy/CuratorDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/apiStudy/WatcherDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/interProcessMutex/LockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/leaderselect/LeaderSelectorClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/leaderselect/LeaderSelectorClientB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/curator/leaderselect/LeaderSelectorClientC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZKClientTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZKClientTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZKClientTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZkClientDistribute$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZkClientDistribute$LockData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZkClientDistribute$Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/zookeeper/zkDistribute/ZkClientDistribute.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,25 +369,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collection.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/restock/service/RestockServiceRpc.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/PrintStream.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/WmsBaseEnum.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/base/zone/ZoneTypeEnum.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/ServletResponse.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/util/CollectionUtils.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONArray.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/PrintStream.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collection.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -101,7 +424,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/lambda" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AccumulatorRecursiveAction">
+  <component name="RunManager" selected="Application.StreamReduce">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -115,13 +438,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccumulatorRecursiveAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.AccumulatorRecursiveAction" />
-      <module name="note" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MonitorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leesin.heightConcurrent.executor.MonitorTest" />
       <module name="note" />
@@ -131,6 +447,13 @@
     </configuration>
     <configuration name="StreamMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangwenjun.java8.StreamMap" />
+      <module name="note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.第8讲_find_match_reduce.StreamReduce" />
       <module name="note" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,19 +474,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AccumulatorRecursiveAction" />
       <item itemvalue="Application.MonitorTest" />
       <item itemvalue="Application.StreamMap" />
       <item itemvalue="Application.groupBy (1)" />
       <item itemvalue="Application.groupBy (2)" />
+      <item itemvalue="Application.StreamReduce" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamReduce" />
         <item itemvalue="Application.groupBy (2)" />
         <item itemvalue="Application.groupBy (1)" />
         <item itemvalue="Application.StreamMap" />
         <item itemvalue="Application.MonitorTest" />
-        <item itemvalue="Application.AccumulatorRecursiveAction" />
       </list>
     </recent_temporary>
   </component>

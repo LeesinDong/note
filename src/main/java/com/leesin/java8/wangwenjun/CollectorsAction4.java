@@ -12,7 +12,8 @@ import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.stream.Collectors;
 
-import static com.wangwenjun.java8.CollectorsAction.menu;
+import static com.leesin.java8.wangwenjun.CollectorsAction.menu;
+
 
 public class CollectorsAction4 {
 
