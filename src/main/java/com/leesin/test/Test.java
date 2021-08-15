@@ -47,7 +47,6 @@ class Test {
         });
         System.out.println("hahaha");
 
-
     }
 
     // public static void test(int a) {

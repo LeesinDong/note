@@ -27,10 +27,24 @@ public class SimpleStream {
                 new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("salmon", false, 450, Dish.Type.FISH));
 
-  /*      Stream<Dish> stream = menu.stream();
+        /**
+         * 这里会报错，stream只能被操作一次，第一次操作完了，stream就已经关闭了。
+         */
+        /**
+         * stream中spliterator()就是并行的原因，根据cpu将list进行分割的，做到真正的并行处理
+         */
+        Stream<Dish> stream = menu.stream();
         stream.forEach(System.out::println);
-        stream.forEach(System.out::println);*/
+        stream.forEach(System.out::println);
 
+        /**
+         * stream 元素、 操作都是在里面做的，要干什么事把自己写的代码传进去
+         * collection只包含元素，调用需要额外的一些方法（foreach），再加上自己写的代码
+         */
+        /**
+         * 分为intermediate和terminal
+         * intermediate会输入stream并返回一个stream，terminal会终端stream（foreach）
+         */
         Stream<Dish> dishStream = Stream.of(new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("salmon", false, 450, Dish.Type.FISH));
         dishStream.forEach(System.out::println);
@@ -38,7 +52,6 @@ public class SimpleStream {
         System.out.println("=========================");
 
         List<String> result = menu.stream().filter(d -> {
-
                     System.out.println("filtering->" + d.getName());
                     return d.getCalories() > 300;
                 })
@@ -47,6 +60,17 @@ public class SimpleStream {
                     return d.getName();
                 })
                 .limit(3).collect(toList());
+        /**
+         * 结果：
+         * filtering ->
+         * map->
+         * filtering->
+         * map->
+         * filtering->
+         * map->
+         *
+         * 是filter - map ，如此循环，而不是filter全部完了再全部map，由此可见是连续的
+         */
 
 
         System.out.println("=======================");

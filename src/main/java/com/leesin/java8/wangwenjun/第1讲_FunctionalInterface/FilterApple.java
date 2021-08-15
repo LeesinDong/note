@@ -57,6 +57,10 @@ public class FilterApple {
 
     public static class GreenAnd160WeightFilter implements AppleFilter {
 
+        /**
+         * 具体实现要指定类型，比如List<Apple> = new ArrayList<Apple>
+         * 这里lambda本质也是functional的具体实现，所以这里的Apple不能再是泛型，【如果希望用泛型，可以在已经有泛型的方法里面调用lambda，这样lambda的入参可以用外面包着这层的类型】
+         */
         @Override
         public boolean filter(Apple apple) {
             return ("green".equals(apple.getColor()) && apple.getWeight() >= 160);

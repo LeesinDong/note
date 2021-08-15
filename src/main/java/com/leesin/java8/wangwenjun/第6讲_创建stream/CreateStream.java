@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第6讲_创建stream;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -32,10 +32,9 @@ public class CreateStream {
 
     /**
      * Generate the stream object from collection.
-     *
-     * @return
      */
     private static Stream<String> createStreamFromCollection() {
+        /**list里面的顺序，是不会变的，当然用了sort方法等除外*/
         List<String> list = Arrays.asList("hello", "alex", "wangwenjun", "world", "stream");
         return list.stream();
     }
