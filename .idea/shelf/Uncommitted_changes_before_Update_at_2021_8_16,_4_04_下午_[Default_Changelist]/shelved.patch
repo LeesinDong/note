@@ -1,0 +1,39 @@
+Index: src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.leesin.java8.wangwenjun;\n\n/***************************************\n * @author:Alex Wang\n * @Date:2016/10/29 QQ:532500648\n * QQ交流群:286081824\n ***************************************/\n\nimport com.leesin.java8.wangwenjun.第5讲_stream.Dish;\n\nimport java.util.Comparator;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.Optional;\nimport java.util.function.BinaryOperator;\nimport java.util.stream.Collectors;\n\nimport static com.wangwenjun.java8.CollectorsAction.menu;\n\npublic class CollectorsAction3 {\n\n    public static void main(String[] args) {\n        testPartitioningByWithPredicate();\n        testPartitioningByWithPredicateAndCollector();\n        testReducingBinaryOperator();\n        testReducingBinaryOperatorAndIdentiy();\n        testReducingBinaryOperatorAndIdentiyAndFunction();\n        testSummarizingDouble();\n        testSummarizingLong();\n        testSummarizingInt();\n    }\n\n    private static void testPartitioningByWithPredicate() {\n        System.out.println(\"testPartitioningByWithPredicate\");\n        Map<Boolean, List<Dish>> collect = menu.stream().collect(Collectors.partitioningBy(Dish::isVegetarian));\n        Optional.of(collect).ifPresent(System.out::println);\n\n    }\n\n    private static void testPartitioningByWithPredicateAndCollector() {\n        System.out.println(\"testPartitioningByWithPredicateAndCollector\");\n        Map<Boolean, Double> collect = menu.stream()\n                .collect(Collectors.partitioningBy(Dish::isVegetarian, Collectors.averagingInt(Dish::getCalories)));\n        Optional.of(collect).ifPresent(System.out::println);\n    }\n\n    private static void testReducingBinaryOperator() {\n        System.out.println(\"testReducingBinaryOperator\");\n        menu.stream().collect(\n                Collectors.reducing(\n                        BinaryOperator.maxBy(\n                                Comparator.comparingInt(Dish::getCalories)\n                        )\n                )\n        ).ifPresent(System.out::println);\n    }\n\n    private static void testReducingBinaryOperatorAndIdentiy() {\n        System.out.println(\"testReducingBinaryOperatorAndIdentiy\");\n        Integer result = menu.stream()\n                .map(Dish::getCalories).collect(Collectors.reducing(0, (d1, d2) -> d1 + d2));\n        System.out.println(result);\n    }\n\n    private static void testReducingBinaryOperatorAndIdentiyAndFunction() {\n        System.out.println(\"testReducingBinaryOperatorAndIdentiyAndFunction\");\n        Integer result = menu.stream().collect(Collectors.reducing(0, Dish::getCalories, (d1, d2) -> d1 + d2));\n        System.out.println(result);\n    }\n\n    private static void testSummarizingDouble() {\n        System.out.println(\"testSummarizingDouble\");\n        Optional.of(menu.stream().collect(Collectors.summarizingDouble(Dish::getCalories)))\n                .ifPresent(System.out::println);\n    }\n\n    private static void testSummarizingLong() {\n        System.out.println(\"testSummarizingLong\");\n        Optional.of(menu.stream().collect(Collectors.summarizingLong(Dish::getCalories)))\n                .ifPresent(System.out::println);\n    }\n\n    private static void testSummarizingInt() {\n        System.out.println(\"testSummarizingLong\");\n        Optional.of(menu.stream().collect(Collectors.summarizingInt(Dish::getCalories)))\n                .ifPresent(System.out::println);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java b/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java
+--- a/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java	(revision fdbfe66b32db452fab3b7899343d3eb2cf6aa6c0)
++++ b/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java	(date 1629101029855)
+@@ -15,7 +15,6 @@
+ import java.util.function.BinaryOperator;
+ import java.util.stream.Collectors;
+ 
+-import static com.wangwenjun.java8.CollectorsAction.menu;
+ 
+ public class CollectorsAction3 {
+ 
+Index: src/main/java/com/leesin/json/test/FastJsonBugTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/leesin/json/test/FastJsonBugTest.java b/src/main/java/com/leesin/json/test/FastJsonBugTest.java
+new file mode 100644
+--- /dev/null	(date 1629101029845)
++++ b/src/main/java/com/leesin/json/test/FastJsonBugTest.java	(date 1629101029845)
+@@ -0,0 +1,11 @@
++package com.leesin.json.test;
++
++/**
++ * @author Leesin Dong
++ * @since Created in 2021/8/16 4:02 下午
++ */
++public class FastJsonBugTest {
++    public static void main(String[] args) {
++
++    }
++}
