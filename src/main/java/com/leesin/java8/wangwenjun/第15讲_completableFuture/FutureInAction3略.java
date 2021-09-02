@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第15讲_completableFuture;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
@@ -8,10 +8,13 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Date:2016/11/7 QQ:532500648
  * QQ交流群:286081824
  ***************************************/
-public class FutureInAction3 {
+public class FutureInAction3略 {
 
+    /**
+     * 手写实现completableFuture
+     * @param args
+     */
     public static void main(String[] args) {
-
 
         Future<String> future = invoke(() -> {
             try {

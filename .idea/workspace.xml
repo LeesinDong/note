@@ -9,69 +9,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16,_4_04_下午_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16,_4_05_下午_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16,_4_08_下午_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16__4_04___Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16__4_05___Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_16__4_08___Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_9,_1_21_下午_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_8_9__1_21___Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorsAction3_reducing_$$$summarizing_join$$$.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorsAction4_$$$groupby_partition$$$.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第9讲_numberic_streams/NumericStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/json/test/FastJsonBugTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/guava/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple$AppleBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/groupBy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/qlExpress/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/test/Test$AClass$AClassBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leesin/test/Test$AClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/serialize/SerializableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/AccumulatorRecursiveAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/AccumulatorRecursiveAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/AccumulatorRecursiveTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/AccumulatorRecursiveTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorIntroduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorIntroduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorReduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorsAction1_$$$collectingAndThen_averaging$$$_mapping_counting_summing_maxBy_minBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CollectorsAction4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CustomerCollectorAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CustomerCollectorAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/ForkJoinPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/ForkJoinPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/Insurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/NullPointerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/NullPointerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/NumericStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/OptionalInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalInAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/OptionalUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalUsage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/ParallelProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/ParallelProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/SpliteratorInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/SpliteratorInAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/StreamInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第10讲_stream综合练习/StreamInAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/ToListCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/ToListCollector_自定义Collector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第10讲_stream综合练习/Trader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第10讲_stream综合练习/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_FunctionalInterface/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/Apple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_FunctionalInterface/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第2讲_Lambda_return/LambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第2讲_Lambda_return/LambdaExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第3讲_四个特殊的Functional/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第3讲_四个特殊的Functional/LambdaUsage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_consumer例子/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_consumer例子/ThreeFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/ThreeFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第5讲_stream介绍/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/SimpleStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第5讲_stream介绍/SimpleStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第6讲_创建stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第7讲_filter_distinct_skip_limit_map_flatmap/StreamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第7讲_filter_distinct_skip_limit_map_flatmap/StreamFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第7讲_filter_distinct_skip_limit_map_flatmap/StreamMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第7讲_filter_distinct_skip_limit_map_flatmap/StreamMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第8讲_find_match_reduce/StreamFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第8讲_find_match_reduce/StreamMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第8讲_find_match_reduce/StreamReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第8讲_find_match_reduce/StreamReduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction1略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction3略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/CompletableFutureInAction5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/DefaultInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第14讲_default/DefaultInAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/FutureInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/FutureInAction略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/FutureInAction2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/FutureInAction2略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/FutureInAction3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/FutureInAction3略.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/ParallelProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/ParallelProcessing_笔记.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/SpliteratorInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第13讲_parallel/SpliteratorInAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第3讲_四个特殊的Functional/LambdaUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第3讲_四个特殊的Functional/LambdaUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple$AppleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple$AppleBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/groupBy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leesin/java8/heima/stream/groupBy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/test/Test$AClass$AClassBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/test/Test$AClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log4j2-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/.sonar_lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,26 +64,26 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/util/CollectionUtils.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONArray.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collection.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/WmsBaseEnum.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/restock/service/RestockServiceRpc.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/WmsBaseEnum.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/IntSummaryStatistics.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/PrintStream.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/base/zone/ZoneTypeEnum.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/parent/wj-wms-pixiou-api/1.4.1-RELEASE/wj-wms-pixiou-api-1.4.1-RELEASE-sources.jar!/com/wujie/pixiou/api/constant/BusinessTypeEnum.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/response/QueryRes.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/IntSummaryStatistics.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/util/CollectionUtils.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONArray.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17-sources.jar!/javax/servlet/ServletResponse.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wj-wms-enums/2.5.99-SNAPSHOT/wj-wms-enums-2.5.99-20210528.140327-27.jar!/com/wujie/wms/enums/base/zone/ZoneTypeEnum.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/wujie/wms/wes/wj-wms-wes-facade/1.2.0-RELEASE/wj-wms-wes-facade-1.2.0-RELEASE-sources.jar!/com/wujie/wes/facade/dto/v2/TaskDTO.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -143,6 +107,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/leesin/test" />
@@ -152,7 +117,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showRenderedDocs" value="false" />
@@ -169,7 +134,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/lambda" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FastJsonBugTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -190,8 +155,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangwenjun.java8.StreamMap" />
+    <configuration name="IntegerNPE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.test.IntegerNPE" />
+      <module name="note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SerializableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.serialize.SerializableTest" />
       <module name="note" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,34 +176,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="groupBy (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="groupBy" />
-      <module name="note" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="groupBy (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.heima.stream.groupBy" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.test.Test" />
       <module name="note" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StreamMap" />
-      <item itemvalue="Application.groupBy (1)" />
-      <item itemvalue="Application.groupBy (2)" />
       <item itemvalue="Application.StreamReduce" />
       <item itemvalue="Application.FastJsonBugTest" />
+      <item itemvalue="Application.IntegerNPE" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.SerializableTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.SerializableTest" />
+        <item itemvalue="Application.IntegerNPE" />
         <item itemvalue="Application.FastJsonBugTest" />
         <item itemvalue="Application.StreamReduce" />
-        <item itemvalue="Application.groupBy (2)" />
-        <item itemvalue="Application.groupBy (1)" />
-        <item itemvalue="Application.StreamMap" />
       </list>
     </recent_temporary>
   </component>

@@ -1,66 +1,114 @@
 package com.leesin.test;
 
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import lombok.Builder;
-import lombok.Data;
-import lombok.experimental.Tolerate;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
 
 @Slf4j
 class Test {
-    public static void main(String[] args) {
-        // ArrayList<Integer> integers = Lists.newArrayList(1, 2, 3);
-        // List<Integer> collect = integers.stream().filter(i -> i > 4).collect(Collectors.toList());
-        // log.error("haha");
-        // Integer a = null;
-        // // test(a);
-        //
-        // ArrayList<Integer> list = Lists.newArrayList();
-        // list.add(1);
-        // list.add(2);
-        // list.add(3);
-        // list.add(4);
-        // long count = list.stream().filter(i -> i > 3).count();
-        // List<Integer> collect = list.stream().collect(Collectors.toList());
-        // System.out.println(count);
-        // System.out.println(list);
-        // System.out.println(collect);
-        // @Bean
-         ExecutorService THREAD_POOL = new ThreadPoolExecutor(6,
-                6,
-                0L,
-                TimeUnit.MILLISECONDS,
-                new LinkedBlockingDeque<>(),
-                new ThreadFactoryBuilder().setNameFormat("reviewServiceExecutor-Thread-%d").build(),
-                new ThreadPoolExecutor.CallerRunsPolicy());
+    public static void main(String[] args) throws Exception {
+        // throwa();
+        CompletableFuture<Object> a = CompletableFuture.supplyAsync(() -> {
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return 1;
+                }, Executors.newFixedThreadPool(100))
+                .thenApply(i -> {
+                    log.info("1");
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    throw new RuntimeException("a");
+                });
 
-        CompletableFuture<Object> f = CompletableFuture.supplyAsync(() -> {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("f");
-            return null;
-        });
-        System.out.println("hahaha");
+        CompletableFuture<Object> a1 = CompletableFuture.supplyAsync(() -> {
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return 1;
+                }, Executors.newFixedThreadPool(100))
+                .thenApply(i -> {
+                    log.info("1");
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    throw new RuntimeException("a");
+                });
+        CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf(a, a1);
+        voidCompletableFuture.join();
 
+        // .handleAsync((i, e) -> {
+                //     try {
+                //         Thread.sleep(5000);
+                //     } catch (InterruptedException ez) {
+                //         ez.printStackTrace();
+                //     }
+                //     log.info("2");
+                //     log.info("", e);
+                //     return 1;
+                // });
+                // .whenComplete((i, e) -> {
+                //     try {
+                //         Thread.sleep(5000);
+                //     } catch (InterruptedException ez) {
+                //         ez.printStackTrace();
+                //     }
+                //     log.info("3");
+                //     log.info("", e);
+                // });
+                // .thenRun(() -> {
+                //     try {
+                //         Thread.sleep(5000);
+                //     } catch (InterruptedException ez) {
+                //         ez.printStackTrace();
+                //     }
+                //     log.info("4");
+                //     throw new RuntimeException("b");
+                // });
+                // .exceptionally((e) -> {
+                //     try {
+                //         Thread.sleep(5000);
+                //     } catch (InterruptedException ez) {
+                //         ez.printStackTrace();
+                //     }
+                //     log.info("", e);
+                //     return null;
+                // });
+                // .thenAccept(i -> {
+                //     log.info("5");
+                // })
+                // .exceptionally((e) -> {
+                //     log.info("-", e);
+                //     return null;
+                // });
+
+        System.out.println("aaa");
     }
 
-    // public static void test(int a) {
-    //     System.out.println(a);
-    // }
-
-    @Builder
-    @Data
-    public static class AClass {
-        private String A;
-        private String B;
-
-        @Tolerate
-        public AClass() {
+    public static void throwa() {
+        // throw new RuntimeException();
+        InputStream inputStream = new InputStream() {
+            @Override
+            public int read() throws IOException {
+                return 0;
+            }
+        };
+        try {
+            inputStream.read();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

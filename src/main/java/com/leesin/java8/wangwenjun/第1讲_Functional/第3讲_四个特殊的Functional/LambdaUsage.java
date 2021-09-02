@@ -13,8 +13,8 @@ import java.util.function.*;
  */
 public class LambdaUsage {
     /**
-     * 本质：Predicate、consumer、function、supplier等本质就是一个【需要参数的lambda表达式】
-     * 1 可以将 Predicate、consumer、function、supplier 当做参数封装到方法内, 然后在调用处再给具体实现, 也可以直接使用而不封装
+     * 本质：Predicate、consumer、function、supplier等本质就是一个【需要参数的lambda表达式】，在调用处给【i -> xxx】这种具体实现，即Predicate
+     * 1 【i -> xxx 】， 可以将 Predicate、consumer、function、supplier 当做参数封装到方法内, 然后在调用处再给具体实现, 也可以直接使用而不封装，直接 这种形式
      * 需要在lambda外面包一层上下有其他实现的就包成方法， 不需要的就直接用
      * 2 本质就是 通过predicate.test(a)、consumer.accept(a)、function.apply(a)、 supplier.get() 等[传入外部参数]进行调用
      */

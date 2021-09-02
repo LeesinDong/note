@@ -16,7 +16,7 @@ import java.util.stream.StreamSupport;
 public class SpliteratorInAction {
 
     /**
-     * spliter是forkJoin的封装，stream没有直接用forkJoin
+     * spliter是forkJoin的封装，stream没有直接用forkJoin    stream并行 -> spliter -> forkJoin 实现并行
      */
     private static String text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lacinia massa, quis eleifend dui. Sed in molestie ex. Curabitur id dui orci. Aenean pulvinar, tortor et egestas semper, mauris lectus malesuada ex, quis commodo urna nulla vitae eros. Cras scelerisque vel ligula at suscipit. Maecenas non ipsum quis est malesuada lobortis. Cras porta tortor elit, ut dictum ipsum pellentesque in. Mauris ut sollicitudin tellus.\n" +
             "\n" +
@@ -59,12 +59,17 @@ public class SpliteratorInAction {
         mySpliteratorText.parallelStream().filter(s -> !s.equals("")).forEach(System.out::println);
 
         IntStream intStream = IntStream.rangeClosed(0, 100);
+
+        /**
+         * 这里最后还是全部以并行执行的，因为只是parallel方法只是赋值为sourceStage.parallel = true;最后还是true
+         * 所以filter、map都是并行执行，而不是所想的map以串行执行
+         */
         intStream
-                .parallel()
+                .parallel() // 并行
                 .filter(null)
-                .sequential()
+                .sequential() // 串行
                 .map(null)
-                .parallel()
+                .parallel() // 并行
                 .forEach(null);
 
     }

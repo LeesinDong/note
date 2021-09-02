@@ -12,11 +12,13 @@ public class OptionalUsage {
     public static void main(String[] args) {
 
         /**
+         * 1 开头
+         */
+        /**
          * empty
          */
         Optional<Insurance> insuranceOptional = Optional.<Insurance>empty();
        insuranceOptional.get();
-
         /**
          * of
          */
@@ -28,6 +30,27 @@ public class OptionalUsage {
          */
         Optional<Insurance> objectOptional = Optional.ofNullable(null);
 
+
+
+        /**
+         * 2 中间
+         */
+        /**
+         * filter
+         */
+        Insurance insurance = insuranceOptional1.filter(i -> i.getName() != null).get();
+        System.out.println(insurance);
+
+        /**
+         * map
+         */
+        Optional<String> nameOptional = insuranceOptional1.map(i -> i.getName());
+        System.out.println(nameOptional.orElse("empty Value"));
+
+
+        /**
+         * 结尾 开头
+         */
         /**
          * orElse系列，对于supplier，不需要入参的函数只需要方法引用即可
          */
@@ -45,17 +68,6 @@ public class OptionalUsage {
         objectOptional.orElseThrow(RuntimeException::new);
         objectOptional.orElseThrow(() -> new RuntimeException("Not have reference"));
 
-        /**
-         * filter
-         */
-        Insurance insurance = insuranceOptional1.filter(i -> i.getName() != null).get();
-        System.out.println(insurance);
-
-        /**
-         * map
-         */
-        Optional<String> nameOptional = insuranceOptional1.map(i -> i.getName());
-        System.out.println(nameOptional.orElse("empty Value"));
         /**
          * ifPresent
          */

@@ -31,6 +31,9 @@ public class MethodReference {
          * Functional = 方法引用 or lambda
          *
          * 方法引用 ----> 就是 lambda变体 ----> lambda中 【对象.方法(参数)】 中的 【对象、参数】用apply传入
+         *
+         *==========【lambda 和 optional 中能不能用的本质：lambda 和 optional流里面只能传一个对象，
+         * 不论是123中的哪个，supplu中只能有一个参数，想用2则只能调用===对象对应的类中的空参方法====】==========
          */
 
         /**
@@ -95,8 +98,18 @@ public class MethodReference {
         System.out.println(complexApple);
 
 
+
+
+
+
+
+
+
         /**
-         * 5 comparator方法引用
+         * 下面是例子
+         */
+        /**
+         * comparator方法引用
          */
         // 匿名内部类
         List<Apple> list1 = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
@@ -119,13 +132,11 @@ public class MethodReference {
         System.out.println(list2);
         list2.sort(Comparator.comparing(Apple::getColor));
         System.out.println(list2);
-
         /**
-         *  6 sout
+         *  sout
          */
         useConsumer(s1 -> System.out.println(s1), "Hello Alex");
         useConsumer(System.out::println, "Hello Wangwenjun");
-
         /**
          * sum
          */

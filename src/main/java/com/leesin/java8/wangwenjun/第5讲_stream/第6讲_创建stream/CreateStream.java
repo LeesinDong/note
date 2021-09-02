@@ -44,19 +44,20 @@ public class CreateStream {
     }
 
     /**
-     * 2 Stream.of()
-     */
-    private static Stream<String> createStreamFromValues() {
-        return Stream.of("hello", "alex", "wangwenjun", "world", "stream");
-    }
-
-    /**
      * 3 Arrays.stream(数组)   例如Arrays.stream(new String[])
      */
     private static Stream<String> createStreamFromArrays() {
         String[] strings = {"hello", "alex", "wangwenjun", "world", "stream"};
         return Arrays.stream(strings);
     }
+
+    /**
+     * 3 Stream.of()
+     */
+    private static Stream<String> createStreamFromValues() {
+        return Stream.of("hello", "alex", "wangwenjun", "world", "stream");
+    }
+
 
     /**
      * 4 stream方式读取文件

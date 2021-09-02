@@ -1,4 +1,4 @@
-package com.leesin.java8.wangwenjun;
+package com.leesin.java8.wangwenjun.第15讲_completableFuture;
 
 import java.util.Random;
 import java.util.concurrent.*;
@@ -8,7 +8,7 @@ import java.util.concurrent.*;
  * @Date:2016/11/8 QQ:532500648
  * QQ交流群:286081824
  ***************************************/
-public class CompletableFutureInAction {
+public class CompletableFutureInAction略 {
 
     private static final Random random = new Random(System.currentTimeMillis());
 
@@ -63,7 +63,7 @@ public class CompletableFutureInAction {
         });
         executor.execute(() -> System.out.println("sfsdfsfs"));*/
 
-        Double value = CompletableFuture.supplyAsync(CompletableFutureInAction::get)
+        Double value = CompletableFuture.supplyAsync(CompletableFutureInAction略::get)
                 .whenComplete((v, t) -> System.out.println(">>>>" + v))
                 .thenCompose(i -> CompletableFuture.supplyAsync(() -> i + 10))
                 .get();
