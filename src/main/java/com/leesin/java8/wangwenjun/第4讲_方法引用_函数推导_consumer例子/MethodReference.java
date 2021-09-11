@@ -1,6 +1,5 @@
 package com.leesin.java8.wangwenjun.第4讲_方法引用_函数推导_consumer例子;
 
-import com.leesin.java8.wangwenjun.ComplexApple;
 import com.leesin.java8.wangwenjun.第1讲_Functional.第1讲_FunctionalInterface.Apple;
 
 import java.util.Arrays;

@@ -1,7 +1,5 @@
 package com.leesin.java8.wangwenjun.第11讲_optional;
 
-import com.leesin.java8.wangwenjun.Person;
-
 import java.util.Optional;
 
 /***************************************

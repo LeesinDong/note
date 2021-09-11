@@ -1,0 +1,30 @@
+
+‡
+java:S1130"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(Í§ã“
+Q	java:S125"<This block of commented-out lines of code should be removed.(ƒµ»
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ëÌ£Ó
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(ñõÔû
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(’ŠÝŸþÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(Ž«±ªÿÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(’ù“šýÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(†ó²ýÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(žÓ”Äÿÿÿÿÿ
+=
+java:S2201<"'The return value of "get" must be used.(Â‡¢´
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(˜þÁØþÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(Œë­‚úÿÿÿÿ
+M	java:S106C"9Replace this use of System.out or System.err by a logger.(Èëƒc
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(½èÃÒ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(úŽœüýÿÿÿÿ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(—½œà
+N	java:S106f"9Replace this use of System.out or System.err by a logger.( ©Ìò
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(©ìÆßûÿÿÿÿ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(£×È¯ûÿÿÿÿ
+N	java:S106p"9Replace this use of System.out or System.err by a logger.(Ö—Ç¹
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(”Îùïùÿÿÿÿ
+Q	java:S125z"<This block of commented-out lines of code should be removed.(ãÒ¯…
+Q	java:S125|"<This block of commented-out lines of code should be removed.(à«ñ
+O	java:S106€"9Replace this use of System.out or System.err by a logger.(¤™ï×
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(Ô„¢øÿÿÿÿ
+T	java:S106Ž"9Replace this use of System.out or System.err by a logger.(î¾³×üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÞòÉøÿÿÿÿ

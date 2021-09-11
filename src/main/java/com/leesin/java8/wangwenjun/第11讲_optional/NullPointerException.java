@@ -1,7 +1,5 @@
 package com.leesin.java8.wangwenjun.第11讲_optional;
 
-import com.leesin.java8.wangwenjun.Person;
-
 /***************************************
  * @author:Alex Wang
  * @Date:2016/10/24 QQ:532500648

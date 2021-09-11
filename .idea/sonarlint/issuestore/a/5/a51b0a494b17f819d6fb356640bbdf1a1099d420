@@ -1,0 +1,31 @@
+
+g	java:S112p"FDefine and throw a dedicated exception instead of using a generic one.(¿š›Âüÿÿÿÿ8Û÷ÿœ½/
+c	java:S112»"FDefine and throw a dedicated exception instead of using a generic one.(• ¶ê8ñ÷ÿœ½/
+Q
+java:S3740G"/Provide the parametrized type for this generic.(Óãôîşÿÿÿÿ8‚øÿœ½/
+R
+java:S3740‚"/Provide the parametrized type for this generic.(¶Ä¾Ùûÿÿÿÿ8«øÿœ½/
+R
+java:S3740"/Provide the parametrized type for this generic.(ÊÒŞîùÿÿÿÿ8îøÿœ½/
+M
+java:S3740æ"/Provide the parametrized type for this generic.(µã…ñ8úøÿœ½/
+R
+java:S3740ë"/Provide the parametrized type for this generic.(®–¹Şøÿÿÿÿ8“ùÿœ½/
+R
+java:S3740ë"/Provide the parametrized type for this generic.(®–¹Şøÿÿÿÿ8¬ùÿœ½/
+r
+java:S1149b"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8ãüÿœ½/
+W
+java:S1118 ":Add a private constructor to hide the implicit public one.(›Ê©ú8‰ıÿœ½/
+r
+java:S1149b"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8ò€½/
+W
+java:S1118B":Add a private constructor to hide the implicit public one.(°œ°©8ü€½/
+b
+java:S1124U"EReorder the modifiers to comply with the Java Language Specification.( î‹õ8ˆƒ€½/
+x
+java:S3008‚"URename this field "BASIC_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ä¾Ùûÿÿÿÿ8Æ„€½/
+]
+java:S1118€":Add a private constructor to hide the implicit public one.(Ûî”´ıÿÿÿÿ8é„€½/
+Q
+java:S1121Ó".Extract the assignment out of this expression.(ğí¶Üıÿÿÿÿ8÷ˆ€½/

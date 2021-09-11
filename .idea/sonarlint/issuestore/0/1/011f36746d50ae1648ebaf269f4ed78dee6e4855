@@ -1,0 +1,18 @@
+
+W
+java:S6213":Rename this variable to not match a restricted identifier.(“ªµî8ý‰ÿœ½/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(™áŠóþÿÿÿÿ8ŽŠÿœ½/
+W
+java:S6213&":Rename this variable to not match a restricted identifier.(Àíý¹8£Šÿœ½/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(™áŠóþÿÿÿÿ8ªŠÿœ½/
+X	java:S125i"<This block of commented-out lines of code should be removed.(´©ŽÁ8“ÿœ½/
+]	java:S125l"<This block of commented-out lines of code should be removed.(„ö†Ðùÿÿÿÿ8Ÿÿœ½/
+X	java:S125r"<This block of commented-out lines of code should be removed.(ÑÌ•û8®ÿœ½/
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(‘¯Ñ’ýÿÿÿÿ8æÿœ½/
+[	java:S106Š"9Replace this use of System.out or System.err by a logger.(›Óð°þÿÿÿÿ8ß”ÿœ½/
+V	java:S106"9Replace this use of System.out or System.err by a logger.(Ý™»ß8š•ÿœ½/
+c
+java:S1192B"FDefine a constant instead of duplicating this literal "green" 5 times.(´È¯Ü8Ô–ÿœ½/
+F
+java:S1604‡"(Make this anonymous inner class a lambda(ÉãÃ®8³—ÿœ½/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õú¹Èýÿÿÿÿ8Ý˜ÿœ½/

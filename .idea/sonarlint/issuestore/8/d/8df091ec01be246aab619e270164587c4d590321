@@ -1,0 +1,23 @@
+
+7
+java:S1170("!Make this final field static too.(ÑüûŠ
+<
+java:S1170)"!Make this final field static too.(Õ¢–öûÿÿÿÿ
+W
+java:S1075("ARefactor your code to get this URI from a customizable parameter.(ÑüûŠ
+\
+java:S1075)"ARefactor your code to get this URI from a customizable parameter.(Õ¢–öûÿÿÿÿ
+c	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñª“
+c	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óõéï
+c	java:S100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×½à
+A
+java:S5960."+Remove this assertion from production code.(ò±î
+\
+java:S1192"FDefine a constant instead of duplicating this literal "Guava" 3 times.(ªçŒË
+\
+java:S1192"FDefine a constant instead of duplicating this literal "Scala" 3 times.(ªçŒË
+{
+java:S1192A"`Define a constant instead of duplicating this literal "Google#Guava#Java#Scala#DEFAULT" 4 times.(àÄ§Âüÿÿÿÿ
+^
+java:S1192@"HDefine a constant instead of duplicating this literal "DEFAULT" 4 times.(æÿ€
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á±Í’úÿÿÿÿ

@@ -16,7 +16,7 @@ public class FilterApple {
      */
     /**
      * Lambda是Functional的具体实现，Functional相当于只是一个接口、架子；Predicate是特殊的Functional
-     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】 = 方法引用    即 接口方法 = 接口方法的具体实现=======
+     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】 = 方法引用   即 接口方法 = 接口方法的具体实现=======
      * 方法引用 == Lambda
      */
     @FunctionalInterface
