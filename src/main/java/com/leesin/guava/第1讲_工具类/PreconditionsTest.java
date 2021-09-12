@@ -25,7 +25,11 @@ import static org.springframework.test.util.AssertionErrors.fail;
  * assert key word(statement)
  */
 public class PreconditionsTest {
-    // cr Preconditions 本质：断言
+    // cr  以后所有的if else 都能用这个代替，能不能用这个代替要看项目中的异常handler对于其他的Exception是怎么处理的？是否能返回应有的Exception的Message
+    //    如果是 result.setCode(e.getMessage());，就是可以用的   https://www.ktanx.com/blog/p/5088
+
+    // cr Preconditions 本质：断言   4个：checkNotNull\checkArguments\checkState\checkElementIndex
+
 
     // cr Preconditions.checkNotNull
     /**

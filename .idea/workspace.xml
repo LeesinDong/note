@@ -9,45 +9,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/011f36746d50ae1648ebaf269f4ed78dee6e4855" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/037806b4e6485ab832748ab70d38f4776dc93697" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31d77539674fc4344d7fcb3d4b0ad26f97f363a5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d57d84f10176e8daeed71d1d76e18bc1f07fd16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67763a9e60e82ceb81617141c34ecdcd305fb919" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8aec626c9665f5eefba124ed0b1ed3d81d4e4ba1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8df091ec01be246aab619e270164587c4d590321" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a51b0a494b17f819d6fb356640bbdf1a1099d420" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae9eb31d7d60654b1369cc76abad4b054105d947" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc752982d81921426c5f8750d0abe8e9192beb56" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/JoinerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/ObjectsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/PreconditionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/SplitterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/StringsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第2讲_functional/FunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/ElapsedExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/StopWatchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/Base64_略.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/BaseEncodingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/ByteSinkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/ByteSourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CharSinkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CharSourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CharStreamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CloserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/FilesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/AsyncEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/ComEachOtherEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/DeadEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/ExceptionEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/InheritEventsEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/InheritListenersEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/MultipleEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/SimpleEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/Summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/events略/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/events略/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/events略/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/events略/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyAsyncEventBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyEventBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyEventContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyEventExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MyRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MySubscribe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/internal_自写EventBus略/MySubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/DeadEvent/DeadEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/Exception/ExceptionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/简单Listener/MultipleEventListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/简单Listener/SimpleListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/继承关系_都是向上兼容/Event继承关系/FruitEaterListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/继承关系_都是向上兼容/Listener继承关系/AbstractListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/继承关系_都是向上兼容/Listener继承关系/BaseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/listeners_多种listener/继承关系_都是向上兼容/Listener继承关系/ConcreteListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/monitor_小例子监听文件/DirectoryTargetMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/monitor_小例子监听文件/FileChangeEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/monitor_小例子监听文件/FileChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/monitor_小例子监听文件/MonitorClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/monitor_小例子监听文件/TargetMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/service_循环消费/QueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/service_循环消费/RequestQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/test/MyAsyncBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/test/MyEventBusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/test/MySimpleListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第5讲_eventbus/test/MySimpleListener2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/ListenableFutureExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/MonitorExample_guava实现阻塞队列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/令牌桶/TokenBucketExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/令牌桶/TokenBucket实现令牌桶算法.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/漏桶/BucketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/漏桶/Bucket_guava实现漏桶算法.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第6讲_concurrent/漏桶/RateLimiterExample_漏桶.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/source.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/ComplexApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/ComplexApple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第16讲_Date/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/NullPointerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/NullPointerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第11讲_optional/OptionalInAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/guava/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leesin/guava/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/qlExpress/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leesin/qlExpress/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/JoinerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/JoinerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/PreconditionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/PreconditionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/SplitterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/SplitterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/StringsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/StringsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第9讲_numberic_streams/NumericStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第9讲_numberic_streams/NumericStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leesin/guava/Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +128,7 @@
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
+      <facet id="note/invalid/JRebel" />
       <facet id="note/invalid/Web" />
     </ignored-facets>
   </component>
@@ -126,13 +158,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/leesin/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/leesin/guava" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showRenderedDocs" value="false" />
@@ -142,17 +174,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/wwj" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/guava" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/wwj" />
       <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/functionInterface" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/stream" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/leesin/java8/lambda" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leesin.guava.第4讲_File" />
+      <recent name="com.leesin.guava.第3讲_StopWatch" />
+      <recent name="com.leesin.guava.第2讲_functional" />
       <recent name="com.leesin.guava.第1讲_utilties" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SplitterTest.testSplit_On_Split_OmitEmpty_TrimResult">
+  <component name="RunManager" selected="Application.ExceptionEventBusExample">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -166,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.第16讲_Date.DateTest" />
+    <configuration name="ExceptionEventBusExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第5讲_eventbus.ExceptionEventBusExample" />
       <module name="note" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leesin.java8.wangwenjun.第16讲_Date.*" />
+          <option name="PATTERN" value="com.leesin.guava.第5讲_eventbus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,16 +214,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.第5讲_stream.第8讲_find_match_reduce.StreamReduce" />
+    <configuration name="FunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第2讲_functional.FunctionExample" />
       <module name="note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leesin.guava.第2讲_functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.test.Test" />
+    <configuration name="StopWatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第3讲_StopWatch.StopWatchExample" />
       <module name="note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leesin.guava.第3讲_StopWatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,19 +267,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StreamReduce" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.DateTest" />
+      <item itemvalue="Application.StopWatchExample" />
       <item itemvalue="JUnit.JoinerTest.testJoin_On_Append_To_StringBuilder" />
       <item itemvalue="JUnit.SplitterTest.testSplit_On_Split_OmitEmpty_TrimResult" />
+      <item itemvalue="Application.FunctionExample" />
+      <item itemvalue="Application.ExceptionEventBusExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExceptionEventBusExample" />
+        <item itemvalue="Application.FunctionExample" />
+        <item itemvalue="Application.StopWatchExample" />
         <item itemvalue="JUnit.SplitterTest.testSplit_On_Split_OmitEmpty_TrimResult" />
         <item itemvalue="JUnit.JoinerTest.testJoin_On_Append_To_StringBuilder" />
-        <item itemvalue="Application.DateTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.StreamReduce" />
       </list>
     </recent_temporary>
   </component>

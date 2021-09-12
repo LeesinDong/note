@@ -25,6 +25,10 @@ import static org.junit.Assert.fail;
  * @QQ: 532500648
  ***************************************/
 public class JoinerTest {
+    // cr 本质：Joiner.on("#").join(xxxList);  Joiner.on("#").append(appender, xxxList);
+    //         Joiner.on("#").withKeyValueSeparator("=").join(xxxMap); Joiner.on("#").withKeyValueSeparator("=").append
+    //         (appender, xxxMap);
+
 
 
     private final List<String> stringList = Arrays.asList(
@@ -38,7 +42,6 @@ public class JoinerTest {
     // cr  ImmutableMap.of
     private final Map<String, String> stringMap = ImmutableMap.of("Hello", "Guava", "Java", "Scala");
 
-
     private final String targetFileName = "G:\\Teaching\\汪文君Google Guava实战视频\\guava-joiner.txt";
     private final String targetFileNameToMap = "G:\\Teaching\\汪文君Google Guava实战视频\\guava-joiner-map.txt";
 
@@ -51,6 +54,7 @@ public class JoinerTest {
         String result = Joiner.on("#").join(stringList);
         // cr asset equalTo
         assertThat(result, equalTo("Google#Guava#Java#Scala#Kafka"));
+
     }
     /**
      * join 有null
@@ -76,6 +80,7 @@ public class JoinerTest {
     public void testJoin_On_Join_WithNullValue_UseDefaultValue() {
         String result = Joiner.on("#").useForNull("DEFAULT").join(stringListWithNullValue);
         assertThat(result, equalTo("Google#Guava#Java#Scala#DEFAULT"));
+
     }
 
     // cr join append
@@ -91,6 +96,7 @@ public class JoinerTest {
         assertThat(resultBuilder, sameInstance(builder));
         assertThat(resultBuilder.toString(), equalTo("Google#Guava#Java#Scala#DEFAULT"));
         assertThat(builder.toString(), equalTo("Google#Guava#Java#Scala#DEFAULT"));
+
     }
     /**
      * appendTo writer
@@ -103,6 +109,29 @@ public class JoinerTest {
         } catch (IOException e) {
             fail("append to the writer occur fetal error.");
         }
+    }
+
+    // cr join Map
+    /**
+     * join Map 返回字符串
+     */
+    @Test
+    public void testJoinOnWithMap() {
+        assertThat(Joiner.on('#').withKeyValueSeparator("=").join(stringMap), equalTo("Hello=Guava#Java=Scala"));
+    }
+
+    /**
+     * Map appendTo
+     */
+    @Test
+    public void testJoinOnWithMapToAppendable() {
+        try (FileWriter writer = new FileWriter(new File(targetFileNameToMap))) {
+            Joiner.on("#").withKeyValueSeparator("=").appendTo(writer, stringMap);
+            assertThat(Files.isFile().test(new File(targetFileNameToMap)), equalTo(true));
+        } catch (IOException e) {
+            fail("append to the writer occur fetal error.");
+        }
+
     }
 
     // cr java8
@@ -123,27 +152,5 @@ public class JoinerTest {
         return item == null || item.isEmpty() ? "DEFAULT" : item;
     }
 
-
-    // cr Map
-    /**
-     * join Map
-     */
-    @Test
-    public void testJoinOnWithMap() {
-        assertThat(Joiner.on('#').withKeyValueSeparator("=").join(stringMap), equalTo("Hello=Guava#Java=Scala"));
-    }
-
-    /**
-     * appenTo Map
-     */
-    @Test
-    public void testJoinOnWithMapToAppendable() {
-        try (FileWriter writer = new FileWriter(new File(targetFileNameToMap))) {
-            Joiner.on("#").withKeyValueSeparator("=").appendTo(writer, stringMap);
-            assertThat(Files.isFile().test(new File(targetFileNameToMap)), equalTo(true));
-        } catch (IOException e) {
-            fail("append to the writer occur fetal error.");
-        }
-    }
 }
 

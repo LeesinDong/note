@@ -34,7 +34,7 @@ public class StringsTest {
         // 重复字符串
         assertThat(Strings.repeat("Alex", 3), equalTo("AlexAlexAlex"));
 
-        // 是Null或Empty
+        // cr 是Null或Empty
         assertThat(Strings.isNullOrEmpty(null), equalTo(true));
         assertThat(Strings.isNullOrEmpty(""), equalTo(true));
 
@@ -43,6 +43,7 @@ public class StringsTest {
         assertThat(Strings.padStart("Alex", 5, 'H'), equalTo("HAlex"));
         // 字符串不够长度，则从后面补齐
         assertThat(Strings.padEnd("Alex", 5, 'H'), equalTo("AlexH"));
+
     }
 
     // cr  Charset 字符类型
@@ -79,6 +80,7 @@ public class StringsTest {
          */
         assertThat(CharMatcher.javaDigit().or(CharMatcher.whitespace()).removeFrom("hello 234 world"), equalTo("helloworld"));
         assertThat(CharMatcher.javaDigit().or(CharMatcher.whitespace()).retainFrom("hello 234 world"), equalTo(" 234 "));
+
     }
 
     public Integer text(){

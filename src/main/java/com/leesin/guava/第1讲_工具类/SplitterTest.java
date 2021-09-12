@@ -22,6 +22,7 @@ public class SplitterTest {
     @Test
     public void testSplitOnSplit() {
         List<String> result = Splitter.on("|").splitToList("hello|world");
+        Splitter.on("|").splitToList("hello | world");
         assertThat(result, notNullValue());
         assertThat(result.size(), equalTo(2));
         assertThat(result.get(0), equalTo("hello"));
@@ -62,6 +63,7 @@ public class SplitterTest {
     @Test
     public void testSplitFixLength() {
         List<String> result = Splitter.fixedLength(4).splitToList("aaaabbbbccccdddd");
+
         assertThat(result, notNullValue());
         assertThat(result.size(), equalTo(4));
         assertThat(result.get(0), equalTo("aaaa"));
@@ -110,5 +112,6 @@ public class SplitterTest {
         assertThat(result.size(), equalTo(2));
         assertThat(result.get("hello"),equalTo("HELLO"));
         assertThat(result.get("world"),equalTo("WORLD"));
+
     }
 }

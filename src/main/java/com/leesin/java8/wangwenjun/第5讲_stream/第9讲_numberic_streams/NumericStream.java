@@ -39,6 +39,10 @@ public class NumericStream {
         /**
          * .boxed().map
          */
+        /**
+         * rangeClose []
+         * range [)
+         */
         IntStream.rangeClosed(1, 100)
                 .filter(b -> Math.sqrt(a * a + b * b) % 1 == 0)
                 .boxed()
