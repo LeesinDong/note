@@ -88,6 +88,7 @@ public class ListsExampleTest
         assertThat(Joiner.on(",").join(result),equalTo("3,2,1"));
     }
 
+
     @Test
     public void testPartition(){
         ArrayList<String> list = Lists.newArrayList("1", "2", "3","4");
