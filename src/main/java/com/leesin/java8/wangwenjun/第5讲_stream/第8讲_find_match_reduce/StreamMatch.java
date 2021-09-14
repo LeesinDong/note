@@ -11,6 +11,10 @@ public class StreamMatch {
     public static void main(String[] args) {
 
         /**
+         * cr: 有没有第一个想到match 相当于批量filter
+         */
+
+        /**
          * allMatch 里面的每个一个都满足allMath里面的条件
          */
         Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
@@ -22,7 +26,6 @@ public class StreamMatch {
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         matched = stream.anyMatch(i -> i > 6);
-        System.out.println(matched);
         System.out.println(matched);
 
         /**

@@ -15,7 +15,7 @@ public class BaseEncodingTest {
     @Test
     public void testBase64Encode() {
         /**
-         * encode
+         * cr encode
          */
         BaseEncoding baseEncoding = BaseEncoding.base64();
         System.out.println(baseEncoding.encode("hello".getBytes()));
@@ -25,7 +25,7 @@ public class BaseEncodingTest {
     @Test
     public void testBase64Decode() {
         /**
-         * decode
+         * cr decode
          */
         BaseEncoding baseEncoding = BaseEncoding.base64();
         System.out.println(new String(baseEncoding.decode("aGVsbG8=")));

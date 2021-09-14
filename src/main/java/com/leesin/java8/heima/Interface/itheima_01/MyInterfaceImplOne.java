@@ -1,4 +1,4 @@
-package com.leesin.java8.Interface.itheima_01;
+package com.leesin.java8.heima.Interface.itheima_01;
 
 public class MyInterfaceImplOne implements MyInterface {
     @Override

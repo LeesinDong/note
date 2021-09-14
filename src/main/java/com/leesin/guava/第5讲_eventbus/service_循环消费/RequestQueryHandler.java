@@ -29,6 +29,11 @@ public class RequestQueryHandler
     {
         LOGGER.info("start query the orderNo [{}]", request.toString());
         Response response = new Response();
-        this.eventBus.post(response);
+        // this.eventBus.post(response);
+
+        EventBus eventBus1 = new EventBus();
+        QueryService queryService = new QueryService();
+        eventBus1.register(queryService);
+        eventBus1.post(response);
     }
 }

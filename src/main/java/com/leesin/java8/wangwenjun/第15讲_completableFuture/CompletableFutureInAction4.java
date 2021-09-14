@@ -19,7 +19,6 @@ public class CompletableFutureInAction4 {
          * cr【1】 supplyAsync 构建一个异步的任务，参数是supplier，有返回值
          */
 
-
         /**
          * 本质都一样，都是等待前一个任务完成，进行链式操作
          *
@@ -32,13 +31,14 @@ public class CompletableFutureInAction4 {
          * join、get ---- 直接获取结果不往下处理了 | join uncheck异常不用处理，get check异常，两者都可以抛出异常
          *
          * cr 总结：除了join、get会阻塞主线程，其他的都是声明式的链式api不会阻塞主线程，但是始终都会执行，即使不join、get，是异步线程去执行了
+         *  只不过join get是阻塞了主线程同步等待结果，其他声明api是异步执行，结果看不到
          *  特殊情况：链式api中的执行时间极短的时候，会阻塞主线程，但是链式api的async方法不会阻塞
          *  https://jverson.com/thinking-in-java/juc/completefuture.html  搜：诡异
          */
 
-
         /**
-         * cr 【2】 thenApply、thenAccept         和thenApply的区别 没有返回值
+         * cr 1234 基本一样
+         * cr 【2】 thenApply、thenAccept(void)         和thenApply的区别 没有返回值
          */
         CompletableFuture.supplyAsync(() -> 1)
                 .thenApply(i -> Integer.sum(i, 10))
@@ -48,10 +48,12 @@ public class CompletableFutureInAction4 {
                 .thenAccept(System.out::println);
 
         /**
-         * cr【3】 handle、【4】whenComplete、【5】exceptionally【5】thenRun
+         * cr【3】 handle、【4】whenComplete（返回上一级任务的结果）、【5】exceptionally【5】thenRun
          * handle、whenComplete
-         * 二者的区别handle入参是biFunction，whenComplete入参是biConsumer；返回值handle是return的，cr whenComplete传入什么返回什么
-         * 二者相同的：和thenApply一样， 只不过多了一个可以用于异常的处理
+         * 二者的区别
+         * cr 1 handle入参是biFunction，whenComplete入参是biConsumer；
+         *    2 返回值handle是return的 T U， whenComplete传入什么返回什么  T T
+         * cr 二者相同的：和thenApply一样， 只不过多了一个可以用于异常的处理
          *
          * exceptionally 和 handle、whenComplete一样【三个都是只作用于前面的处理器，完成仅限于前面，异常也是，前面一个没有异常就接收不到】
          *
@@ -64,15 +66,16 @@ public class CompletableFutureInAction4 {
          */
         CompletableFuture.supplyAsync(() -> 1)
                 .handle((v, t) -> Integer.sum(v, 10))
+                /**
+                 * 正常完成：whenComplete返回结果和上级任务一致，异常为null；
+                 * 出现异常：whenComplete返回结果为null，异常为上级任务的异常；
+                 */
                 .whenComplete((v, t) -> System.out.println(v))
                 /**
                  * thenRun 没有入参，所有操作都做完再做一个操作，thenRunAsync异步的
                  * 这里没有入参只是打印了一个回车，可以用来最后完了之后做一个统计
                  */
                 .thenRun(System.out::println);
-
-
-
 
 
 
@@ -91,13 +94,13 @@ public class CompletableFutureInAction4 {
                 .thenCompose(i -> CompletableFuture.supplyAsync(() -> 10 * i))
                 .thenAccept(System.out::println);
         /**
-         * 【8】thenCombine（第二个completableFuture，（第二个completableFuture的结果 、 第一个completableFuture的结果 的一个function））
+         * 【8】thenCombine（第二个completableFuture，（第一个completableFuture的结果 、 第二个completableFuture的结果 的一个function））
          */
         CompletableFuture.supplyAsync(() -> 1)
                 .thenCombine(CompletableFuture.supplyAsync(() -> 2.0d), (r1, r2) -> r1 + r2)
                 .thenAccept(System.out::println);
         /**
-         * 【9】thenAcceptBoth（第二个completableFuture，（第二个completableFuture的结果 、 第一个completableFuture的结果 的一个consumer））
+         * 【9】thenAcceptBoth（第二个completableFuture，（第一个completableFuture的结果 、 第二个completableFuture的结果 的一个consumer））
          * 和上面的区别，这里是consumer
          */
         CompletableFuture.supplyAsync(() -> 1)
@@ -140,6 +143,7 @@ public class CompletableFutureInAction4 {
             System.out.println("I am future 2");
             return CompletableFutureInAction1略.get();
         }), () -> System.out.println("done."));
+
         /**
          * 【12】applyToEither 其中有一个执行完成就执行，其中的这个执行的这个结果，通过thenApply进行后续的操作
          */
@@ -173,8 +177,14 @@ public class CompletableFutureInAction4 {
                 .map(i -> CompletableFuture.supplyAsync(CompletableFutureInAction1略::get))
                 .collect(toList());
 
-        CompletableFuture.anyOf(collect.toArray(new CompletableFuture[collect.size()]))
+        CompletableFuture<Void> done = CompletableFuture.allOf(collect.toArray(new CompletableFuture[collect.size()]))
                 .thenRun(() -> System.out.println("done"));
+
+        CompletableFuture<Void> done1 = CompletableFuture.anyOf(collect.toArray(new CompletableFuture[collect.size()]))
+                .thenRun(() -> System.out.println("done"));
+
+        // 同步等待所有完成
+        done.join();
 
 
         Thread.currentThread().join();

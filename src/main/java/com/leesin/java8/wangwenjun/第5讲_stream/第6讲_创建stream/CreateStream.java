@@ -1,9 +1,12 @@
 package com.leesin.java8.wangwenjun.第5讲_stream.第6讲_创建stream;
 
+import com.google.common.collect.Lists;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -60,7 +63,7 @@ public class CreateStream {
 
 
     /**
-     * 4 stream方式读取文件
+     * 4 stream方式读取文件 streamFromFile
      */
     private static Stream<String> createStreamFromFile() {
         Path path = Paths.get("C:\\Users\\wangwenjun\\IdeaProjects\\java8\\java8-sharing\\src\\main\\java\\com\\wangwenjun\\java8\\CreateStream.java");
@@ -90,6 +93,23 @@ public class CreateStream {
         return Stream.generate(Math::random).limit(10);
     }
 
+
+    public void test() throws IOException {
+        ArrayList<Integer> list = Lists.newArrayList(1, 2, 3);
+        Stream<Integer> stream = list.stream();
+        int[] array = new int[]{1, 3, 4};
+        Arrays.stream(array);
+        Stream.of(1, 2, 3);
+        Stream<String> lines = Files.lines(Paths.get(""));
+
+        Stream<Integer> limit = Stream.iterate(0, i -> i + 2).limit(10);
+        Stream<Double> limit1 = Stream.generate(Math::random).limit(10);
+    }
+
+
+    /**
+     * 下面的略
+     */
     /**
      * 自定义一个generate中supplier
      */

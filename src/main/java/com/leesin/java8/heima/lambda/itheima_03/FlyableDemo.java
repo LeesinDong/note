@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_03;
+package com.leesin.java8.heima.lambda.itheima_03;
 
 /*
     Lambda表达式的格式：(形式参数) -> {代码块}

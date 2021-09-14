@@ -11,6 +11,10 @@ public class Apple {
     public Apple() {
     }
 
+    public Apple(String color) {
+        this.color = color;
+    }
+
     public Apple(String color, long weight) {
         this.color = color;
         this.weight = weight;

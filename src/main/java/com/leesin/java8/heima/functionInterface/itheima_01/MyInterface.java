@@ -1,4 +1,4 @@
-package com.leesin.java8.functionInterface.itheima_01;
+package com.leesin.java8.heima.functionInterface.itheima_01;
 
 @FunctionalInterface
 public interface MyInterface {

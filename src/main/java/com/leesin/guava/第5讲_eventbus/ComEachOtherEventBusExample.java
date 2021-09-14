@@ -21,9 +21,11 @@ public class ComEachOtherEventBusExample
         // 注册consumer到eventBus
         eventBus.register(new RequestQueryHandler(eventBus));
         /**
-         * 调用了query，service将request放入------event bus--------consumer消费response放入-------event bus-----Service再次消费response
-         * 形成循环消费
-         * service（request）《-------》event bus 《-------》consumer（response）
+         * cr 调用了query，service将request放入------event bus--------consumer消费response放入-------event
+         *  bus-----Service再次消费response
+         *  形成循环消费
+         *  service（request）《-------》event bus 《-------》consumer（response）
+         *  【这里的例子共用了eventBus，也可以不共用但是要订阅和发送的一样】
          */
         queryService.query("werwersdf");
     }

@@ -46,6 +46,7 @@ public class TokenBucket实现令牌桶算法
          *
          * 在指定时间内是否获得令牌，获得了则获得，没获得则返回false
          */
+        // cr 本质就这一句
         boolean success = rateLimiter.tryAcquire(10, TimeUnit.SECONDS);
         if (success)
         {
@@ -55,6 +56,7 @@ public class TokenBucket实现令牌桶算法
                 throw new IllegalStateException("Not any phone can be sale, please wait to next time.");
             }
             int phoneNo = phoneNumbers.getAndIncrement();
+            // cr 还有这句
             handleOrder();
             System.out.println(currentThread() + " user get the Mi phone: " + phoneNo + ",ELT:" + started.stop());
             return phoneNo;

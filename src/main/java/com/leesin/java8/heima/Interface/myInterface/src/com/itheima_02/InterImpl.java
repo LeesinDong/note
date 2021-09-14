@@ -1,4 +1,4 @@
-package com.leesin.java8.Interface.myInterface.src.com.itheima_02;
+package com.leesin.java8.heima.Interface.myInterface.src.com.itheima_02;
 
 public class InterImpl implements Inter,Flyable {
     @Override

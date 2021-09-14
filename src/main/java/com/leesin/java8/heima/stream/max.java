@@ -1,4 +1,4 @@
-package com.leesin.java8.stream;
+package com.leesin.java8.heima.stream;
 
 import com.google.common.collect.Lists;
 import lombok.Data;

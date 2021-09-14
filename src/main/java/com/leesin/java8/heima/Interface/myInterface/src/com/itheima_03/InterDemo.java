@@ -1,6 +1,7 @@
-package com.leesin.java8.Interface.myInterface.src.com.itheima_03;
+package com.leesin.java8.heima.Interface.myInterface.src.com.itheima_03;
 
-import com.leesin.java8.Interface.itheima_02.Inter;
+
+import com.leesin.java8.heima.Interface.itheima_02.Inter;
 
 /*
     需求：

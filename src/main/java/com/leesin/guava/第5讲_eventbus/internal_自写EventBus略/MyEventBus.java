@@ -7,7 +7,8 @@ import java.util.concurrent.Executor;
  * @Date:2017/10/21
  * 532500648
  ***************************************/
-public class MyEventBus implements Bus
+public class
+MyEventBus implements Bus
 {
 
     private final MyRegistry registry = new MyRegistry();

@@ -1,4 +1,4 @@
-package com.leesin.java8.functionInterface.itheima_01;
+package com.leesin.java8.heima.functionInterface.itheima_01;
 
 /*
     函数式接口：有且仅有一个抽象方法的接口

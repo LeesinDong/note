@@ -17,7 +17,10 @@ public class QueryService
 
     private final static Logger LOGGER = LoggerFactory.getLogger(QueryService.class);
 
-    private final EventBus eventBus;
+    private  EventBus eventBus;
+
+    public QueryService() {
+    }
 
     public QueryService(EventBus eventBus)
     {

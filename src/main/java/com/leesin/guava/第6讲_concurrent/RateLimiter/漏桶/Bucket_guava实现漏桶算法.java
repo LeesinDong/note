@@ -13,7 +13,8 @@ import static java.lang.Thread.currentThread;
 public class Bucket_guava实现漏桶算法
 {
 
-    // cr 本质：放入（monitor） + 处理（rateLimiter）
+    // cr 本质：就是一个阻塞队列，放入（monitor） + 处理（monitor + rateLimiter）
+    //  即：一个offer不限速，take限速的阻塞队列
 
     private final ConcurrentLinkedQueue<Integer> container = new ConcurrentLinkedQueue<>();
 
@@ -63,6 +64,7 @@ public class Bucket_guava实现漏桶算法
                  * rateLimit加在了漏桶的出桶，入桶不管，cr 加在了处理阶段，匀速出桶，出队列，多了一个队列
                  */
                 // limiter.acquire 返回睡眠的时间
+                // cr 本质就是limiter.acquire()
                 System.out.println(currentThread() + " waiting " + limiter.acquire());
                 // 睡眠相应的时间后，拿到东西进行消费
                 consumer.accept(container.poll());

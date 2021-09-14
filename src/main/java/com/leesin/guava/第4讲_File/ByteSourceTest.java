@@ -26,12 +26,12 @@ public class ByteSourceTest {
     public void testAsByteSource() throws IOException {
         File file = new File(path);
         /**
-         * Files.asByteSource
+         * cr  Files.asByteSource
          */
         ByteSource byteSource = Files.asByteSource(file);
         byte[] readBytes = byteSource.read();
         /**
-         * Files.toByteArray
+         * cr Files.toByteArray
          */
         assertThat(readBytes, is(Files.toByteArray(file)));
     }

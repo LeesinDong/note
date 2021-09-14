@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_06;
+package com.leesin.java8.heima.lambda.itheima_06;
 
 public interface Inter {
     void show();

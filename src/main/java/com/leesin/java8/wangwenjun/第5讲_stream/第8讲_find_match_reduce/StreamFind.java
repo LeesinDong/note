@@ -12,7 +12,8 @@ public class StreamFind {
 
     public static void main(String[] args) {
         /**
-         * find的本质,就是结合optional的一些操作,比如orelse等避免空指针
+         * cr find的本质,就是结合optional的一些操作,比如orelse等避免空指针
+         *      filter().findAny() | filter().findFirst()
          */
 
         /**
@@ -44,8 +45,9 @@ public class StreamFind {
 
     private static int find(Integer[] values, int defaultValue, Predicate<Integer> predicate) {
         for (int i : values) {
-            if (predicate.test(i))
+            if (predicate.test(i)) {
                 return i;
+            }
         }
 
         return defaultValue;

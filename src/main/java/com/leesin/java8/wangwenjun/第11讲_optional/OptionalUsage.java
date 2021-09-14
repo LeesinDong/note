@@ -12,7 +12,7 @@ public class OptionalUsage {
     public static void main(String[] args) {
 
         /**
-         * 1 开头
+         * cr 1 开头 3
          */
         /**
          * empty
@@ -24,23 +24,20 @@ public class OptionalUsage {
          */
         Optional<Insurance> insuranceOptional1 = Optional.of(new Insurance());
         insuranceOptional1.get();
-
         /**
          * ofNullAble是对 empty、of的合并相当于
          */
         Optional<Insurance> objectOptional = Optional.ofNullable(null);
 
 
-
         /**
-         * 2 中间
+         * cr 2 中间 2
          */
         /**
          * filter
          */
         Insurance insurance = insuranceOptional1.filter(i -> i.getName() != null).get();
         System.out.println(insurance);
-
         /**
          * map
          */
@@ -48,11 +45,11 @@ public class OptionalUsage {
         System.out.println(nameOptional.orElse("empty Value"));
 
 
+
+
+
         /**
-         * 结尾 开头
-         */
-        /**
-         * orElse系列，对于supplier，不需要入参的函数只需要方法引用即可
+         * cr 3 结尾 4
          */
         /**
          * orElseGet 提供supplier，这里面可以写方法，即前面为空的时候{xxx做一系列的处理}
@@ -67,7 +64,6 @@ public class OptionalUsage {
          */
         objectOptional.orElseThrow(RuntimeException::new);
         objectOptional.orElseThrow(() -> new RuntimeException("Not have reference"));
-
         /**
          * ifPresent
          */

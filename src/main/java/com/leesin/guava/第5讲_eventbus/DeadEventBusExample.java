@@ -28,7 +28,7 @@ public class DeadEventBusExample
 
 
         /**
-         * unregister，将listener从event bus 中移除出去，后面发送消息，该listener将接收不到了
+         * cr unregister，将listener从event bus 中移除出去，后面发送消息，该listener将接收不到了
          */
         eventBus.unregister(deadEventListener);
         eventBus.post("Hello");

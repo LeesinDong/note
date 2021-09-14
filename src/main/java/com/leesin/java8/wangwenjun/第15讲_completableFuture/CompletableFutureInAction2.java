@@ -21,7 +21,7 @@ public class CompletableFutureInAction2 {
             throws InterruptedException {
         AtomicBoolean finished = new AtomicBoolean(false);
         /**
-         * main里面ExecutorService不是守护线程，默认，executor.shutdown才会退出
+         * cr main里面ExecutorService不是守护线程，默认，executor.shutdown才会退出
          */
         ExecutorService executor = Executors.newFixedThreadPool(2, r -> {
             Thread t = new Thread(r);
@@ -30,9 +30,9 @@ public class CompletableFutureInAction2 {
         });
 
         /**
-         * main里面new的completableFuture是守护线程，main结束后，它也死了。
-         * 可以通过设置finished标记保持main活着来等待completableFuture结束
-         * 也可以，加入费守护线程的Executor【一般用这个】
+         * cr main里面new的completableFuture是守护线程，main结束后，它也死了。（因为fork join里面的线程是守护线程）
+         *  可以通过设置finished标记保持main活着来等待completableFuture结束
+         *  也可以，加入非守护线程的Executor【一般用这个】
          */
         CompletableFuture.supplyAsync(CompletableFutureInAction1略::get, executor)
                 .whenComplete((v, t) -> {

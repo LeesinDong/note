@@ -27,17 +27,17 @@ public class ByteSinkTest {
         File file = new File(path);
         file.deleteOnExit();
         /**
-         * Files.asByteSink
+         * cr 后面本质上还是这个asxxx api
+         * cr Files.asByteSink
          */
         ByteSink byteSink = Files.asByteSink(file);
         byte[] bytes = {0x01, 0x02};
         byteSink.write(bytes);
 
         /**
-         * Files.toByteArray
+         * cr Files.toByteArray
          */
         byte[] expected = Files.toByteArray(file);
-
         assertThat(expected, is(bytes));
     }
 
@@ -53,7 +53,7 @@ public class ByteSinkTest {
          */
         ByteSource byteSource = Files.asByteSource(sourceFile);
         /**
-         * 输入流 拷贝到 输出流
+         * cr 输入流 拷贝到 输出流
          */
         byteSource.copyTo(Files.asByteSink(targetFile));
 
@@ -66,7 +66,5 @@ public class ByteSinkTest {
                 Files.asByteSource(sourceFile).hash(Hashing.sha256()).toString(),
                 equalTo(Files.asByteSource(targetFile).hash(Hashing.sha256()).toString())
         );
-
-
     }
 }

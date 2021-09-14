@@ -29,18 +29,20 @@ public class ParallelProcessing_笔记 {
          * 【根据产生stream的数据源来判断是否用并行】
          * 【Excellent 卓越的，特别适合；Good 良好的，比较适合；Poor 可怜的，非常不适合】
          *
-         * Source               Decomposability
+         * cr Source               Decomposability
          *
-         * ArrayList            Excellent
-         * LinkedList           Poor
-         * IntStream.range      Excellent
-         * Stream.iterate       Poor
-         * HashSet              Good
-         * TreeSet              Good
+         * cr ArrayList            Excellent
+         *    LinkedList           Poor
+         *
+         * cr IntStream.range      Excellent
+         *    Stream.iterate       Poor
+         *
+         * cr HashSet              Good
+         *    TreeSet              Good
          */
 
         /**
-         * 这里（略）
+         * （略）
          * 有一个forjJoin的参数可以设置cpu，可以不断自己调整，达到最优的效果，一般用默认的就行，不同机器还要再设置
          */
     }

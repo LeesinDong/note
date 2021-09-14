@@ -1,4 +1,4 @@
-package com.leesin.java8.functionInterface.itheima_05;
+package com.leesin.java8.heima.functionInterface.itheima_05;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;

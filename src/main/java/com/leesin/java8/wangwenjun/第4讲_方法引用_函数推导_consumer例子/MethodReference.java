@@ -1,10 +1,9 @@
 package com.leesin.java8.wangwenjun.第4讲_方法引用_函数推导_consumer例子;
 
+import com.google.common.collect.Lists;
 import com.leesin.java8.wangwenjun.第1讲_Functional.第1讲_FunctionalInterface.Apple;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -25,15 +24,54 @@ public class MethodReference {
 
 
         /**
-         * 总结：
-         * 方法引用 = lambda，都需要传入参数
-         * Functional = 方法引用 or lambda
+         * cr 方法引用 ----> Functional---------> 就是 lambda变体 ---->
+         *  lambda中 【对象.方法(参数)】 中的 【对象、参数】用apply传入，stream中省略了apply过程
          *
-         * 方法引用 ----> 就是 lambda变体 ----> lambda中 【对象.方法(参数)】 中的 【对象、参数】用apply传入
-         *
-         *==========【lambda 和 optional 中能不能用的本质：lambda 和 optional流里面只能传一个对象，
-         * 不论是123中的哪个，supplu中只能有一个参数，想用2则只能调用===对象对应的类中的空参方法====】==========
+         *==========【lambda 和 optional 中能不能用的本质：cr lambda 和 optional流里面只能传一个对象，
+         * 不论是 下面123中的哪个，supply中只能有一个参数，想用2则只能调用===cr 对象对应的类中的空参方法====】==========
          */
+        List<Apple> appleList = Lists.newArrayList(new Apple("abc", 123),
+                new Apple("Green", 110),
+                new Apple("red", 123));
+        // cr stream|optional 方法引用本质：stream只传一个对象，故只支持以下格式：参数 <= 1 | 0 (当前可以支持的参数)
+        //  1 静态方法(stream)、静态方法()-supplier || 构造方法(stream)、构造方法()-supplier
+        //  2 stream类::对象方法(空参) --- 调用stream里面对象的方法,【stream里面的东西会首先尝试当做方法的参数而不是对象类型，所以会报错】
+        //  3 其他对象::对象方法(stream)、其他对象::对象方法(stream)-supplier
+
+        // cr =======================================================
+        //  本质再总结
+        //  ********stream optional中的操作都尽量用方法引用想 （stream对象方法 || guava静态方法）*******
+        //  根据stream或optional提供的东西来判定走哪个方法
+        //  本质两种：
+        //  1 stream里面每个对象的空参方法 ********stream中的操作都尽量往这里想*******    2 不支持supplier
+        //  2 其他类的方法 1 3 --- 单参(stream传) 或 空参(supplier)
+        //
+        //  cr 也支持多个参数，比如biFunction，比如reduce方法，这里符合13
+        //  =======================================================
+        ArrayList<Object> copyList = Lists.newArrayList();
+        // 1
+        appleList.forEach(System.out::print);
+        Optional.ofNullable(1D).orElseGet(Math::random);
+        // 2
+        appleList.forEach(Apple::getColor);
+        // error：只能空参方法，非空参，默认认为流中是传入参数的静态方法，而不是对象的类型，所以提示没有static方法
+        // appleList.forEach(Apple::setColor);
+        // 3
+        appleList.forEach(copyList::add);
+        // 4 本质还是2
+        ArrayList<String> colorList = Lists.newArrayList("red");
+        colorList.forEach(Apple::new);
+        Optional.ofNullable(new Apple("Green", 110)).orElseGet(Apple::new);
+
+        appleList.stream().map(Apple::getColor);
+        appleList.stream().map(copyList::add);
+        appleList.stream().forEach(System.out::println);
+        colorList.stream().forEach(Apple::new);
+
+
+
+
+
 
         /**
          * 1 【类的静态方法】
@@ -47,7 +85,6 @@ public class MethodReference {
 
         /**
          * 2 3 本质一样，都是调用对象方法，只不过2是 对象所属的类::方法 并且需要传入【对象本身】作为参数
-         * lambda中默认会传入类本身给方法引用，所以可以用类的方法引用
          */
         /**
          * 2 实例方法，即普通【类的实例方法】
@@ -73,9 +110,8 @@ public class MethodReference {
         Character c22 = f3.apply(4);
         System.out.println(c22);
 
-
         /**
-         * 4 【构造方法】
+         * 4 【构造方法】 本质还是2
          */
         /**
          * 这个没有输入参数，所以结果啥也没有
@@ -111,7 +147,8 @@ public class MethodReference {
          * comparator方法引用
          */
         // 匿名内部类
-        List<Apple> list1 = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
+        List<Apple> list1 = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110),
+                new Apple("red", 123));
         list1.sort(new Comparator<Apple>() {
             @Override
             public int compare(Apple o1, Apple o2) {
@@ -119,7 +156,8 @@ public class MethodReference {
             }
         });
         // lambda
-        List<Apple> list = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
+        List<Apple> list = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110),
+                new Apple("red", 123));
         System.out.println(list);
         list.sort((a1, a2) -> a1.getColor().compareTo(a2.getColor()));
         System.out.println(list);
@@ -127,15 +165,22 @@ public class MethodReference {
         System.out.println("==========================");
         list.stream().forEach(System.out::println);
         // 方法引用
-        List<Apple> list2 = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110), new Apple("red", 123));
+        List<Apple> list2 = Arrays.asList(new Apple("abc", 123), new Apple("Green", 110),
+                new Apple("red", 123));
         System.out.println(list2);
+        // cr Comparator.comparing
         list2.sort(Comparator.comparing(Apple::getColor));
+        list2.sort(Comparator.comparing((app) -> app.getColor()));
+        list2.stream().sorted(Comparator.comparing(Apple::getColor));
+
+
         System.out.println(list2);
         /**
          *  sout
          */
         useConsumer(s1 -> System.out.println(s1), "Hello Alex");
         useConsumer(System.out::println, "Hello Wangwenjun");
+
         /**
          * sum
          */

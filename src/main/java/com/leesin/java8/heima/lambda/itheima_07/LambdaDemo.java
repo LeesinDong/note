@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_07;
+package com.leesin.java8.heima.lambda.itheima_07;
 
 /*
     Lambda表达式和匿名内部类的区别

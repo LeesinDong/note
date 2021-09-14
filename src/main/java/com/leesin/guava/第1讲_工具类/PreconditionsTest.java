@@ -97,7 +97,7 @@ public class PreconditionsTest {
         }
     }
 
-    // cr 相同功能 java8、assert中实现
+    // cr 相同功能 java8、assert中实现， checkNotNull ：java8不好，用guava
     @Test(expected = NullPointerException.class)
     public void testByObjects() {
         /**

@@ -22,20 +22,19 @@ public class CharSourceTest {
     @Test
     public void testCharSourceWrap() throws IOException {
         /**
-         * charSource 本质就是字符流，source输入流 = reader
-         * charSink 本质是字符流，sink输出流 = writer
-         *
-         * byteSource 本质是字节流，source输入流 = reader
-         * byteSink 本质是字节流，sink输出流 = writer
+         * cr charSource 本质就是字符流，source输入流 = reader
+         *      charSink 本质是字符流，sink输出流 = writer
+         *      byteSource 本质是字节流，source输入流 = reader
+         *      byteSink 本质是字节流，sink输出流 = writer
          */
 
         // 无法通过文件直接获取字符流CharSource
         /**
-         * 获取字符流1
+         * cr 获取字符流1
          */
         CharSource charSource = CharSource.wrap("i am the CharSource");
         /**
-         * 获取字符流2，本质获取字节流再转化为字符流
+         * cr 获取字符流2，本质获取字节流再转化为字符流, asCharSource api不能直接获得
          */
         Files.asCharSource(new File(""), Charsets.UTF_8);
 
@@ -55,7 +54,7 @@ public class CharSourceTest {
     @Test
     public void testConcat() throws IOException {
         /**
-         * 组合，把多个reader组合成一个
+         * cr 组合，把多个reader组合成一个
          * 实现：读取的时候，多个reader一个一个读取，是否往下接着读取，看next是否还有，具体看
          * com.google.common.io.CharSource.ConcatenatedCharSource
          * {@link com.google.common.io.MultiReader#advance()} --- 先关闭当前的流，后面有流的话，打开下一个继续处理。
@@ -65,6 +64,7 @@ public class CharSourceTest {
                 CharSource.wrap("i am the CharSource2")
         );
 
+        // cr charSource.readLines() 读取
         System.out.println(charSource.readLines().size());
         charSource.lines().forEach(System.out::println);
     }

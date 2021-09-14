@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_01;
+package com.leesin.java8.heima.lambda.itheima_01;
 
 /*
     需求：启动一个线程，在控制台输出一句话：多线程程序启动了

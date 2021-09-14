@@ -1,4 +1,4 @@
-package com.leesin.java8.stream.itheima_03;
+package com.leesin.java8.heima.stream.itheima_03;
 
 import java.util.ArrayList;
 import java.util.stream.Stream;

@@ -19,8 +19,8 @@ public class MonitorExample_guava实现阻塞队列
 {
 
     /**
-     * 解决的问题：synchronized和lock+condition的方式实现的阻塞队列：
-     * 视觉不明显（while），直接把【加锁 + while是否为空】通过【monitor.enterWhen】这种陈述式的进行表达
+     * cr 解决的问题：synchronized和lock+condition的方式实现的阻塞队列：
+     *  视觉不明显（while），直接把【加锁 + while是否为空】通过【monitor.enterWhen】这种陈述式的进行表达
      */
     public static void main(String[] args)
     {
@@ -32,7 +32,7 @@ public class MonitorExample_guava实现阻塞队列
         {
             new Thread(() ->
             {
-                for (; ; )
+                for (; ; ) {
                     try
                     {
                         int data = COUNTER.getAndIncrement();
@@ -43,6 +43,7 @@ public class MonitorExample_guava实现阻塞队列
                     {
                         e.printStackTrace();
                     }
+                }
             }).start();
         }
 
@@ -50,7 +51,7 @@ public class MonitorExample_guava实现阻塞队列
         {
             new Thread(() ->
             {
-                for (; ; )
+                for (; ; ) {
                     try
                     {
                         int data = mg.take();
@@ -60,6 +61,7 @@ public class MonitorExample_guava实现阻塞队列
                     {
                         e.printStackTrace();
                     }
+                }
             }).start();
         }
     }
@@ -73,8 +75,8 @@ public class MonitorExample_guava实现阻塞队列
 
         private final Monitor monitor = new Monitor();
 
+        // 加锁并添加守卫
         private final Monitor.Guard CAN_OFFER = monitor.newGuard(() -> queue.size() < MAX);
-
         private final Monitor.Guard CAN_TAKE = monitor.newGuard(() -> !queue.isEmpty());
 
         public void offer(int value)

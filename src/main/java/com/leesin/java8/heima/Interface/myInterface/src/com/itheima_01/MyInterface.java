@@ -1,4 +1,4 @@
-package com.leesin.java8.Interface.myInterface.src.com.itheima_01;
+package com.leesin.java8.heima.Interface.myInterface.src.com.itheima_01;
 
 public interface MyInterface {
     void show1();

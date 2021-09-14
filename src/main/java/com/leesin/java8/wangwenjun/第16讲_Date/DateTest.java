@@ -57,6 +57,12 @@ public class DateTest {
         System.out.println(localDate.getDayOfMonth());
         System.out.println(localDate.getDayOfWeek());
 
+        // cr  + 1 天
+        System.out.println(localDate.plusDays(1));
+        // cr - 1 天
+        System.out.println(localDate.minusDays(1));
+
+
         localDate.get(ChronoField.DAY_OF_MONTH);
     }
 
@@ -80,6 +86,9 @@ public class DateTest {
     }
 
     private static void testInstant() throws InterruptedException {
+        /**
+         * 点
+         */
         Instant start = Instant.now();
         Thread.sleep(1000L);
         Instant end = Instant.now();
@@ -103,7 +112,7 @@ public class DateTest {
     }
 
     /**
-     * 时代，用于时间跨度大的 时间段
+     * Period 时代，用于时间跨度大的 时间段, 本质和duration一样
      */
     private static void testPeriod() {
         Period period = Period.between(LocalDate.of(2014, 1, 10), LocalDate.of(2016, 1, 10));
@@ -117,12 +126,18 @@ public class DateTest {
      * format
      */
     private static void testDateFormat() {
+        /**
+         * DateTimFormatter
+         */
         LocalDate localDate = LocalDate.now();
         String format1 = localDate.format(DateTimeFormatter.BASIC_ISO_DATE);
 //        String format2 = localDate.format(DateTimeFormatter.ISO_LOCAL_TIME);
         System.out.println(format1);
 //        System.out.println(format2);
 
+        /**
+         * 手写formatter
+         */
         DateTimeFormatter mySelfFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String format = localDate.format(mySelfFormatter);
         System.out.println(format);

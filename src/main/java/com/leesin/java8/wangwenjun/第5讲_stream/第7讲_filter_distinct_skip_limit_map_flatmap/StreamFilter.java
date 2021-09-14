@@ -15,32 +15,36 @@ public class StreamFilter {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 6, 7, 7, 1);
 
         /**
-         * 过滤
+         * fileter 过滤
          */
         List<Integer> result = list.stream().filter(i -> i % 2 == 0).collect(toList());
         System.out.println(result);
 
         /**
-         * 去重
+         * distinct 去重
          */
         result = list.stream().distinct().collect(toList());
         System.out.println(result);
+        // 去重汇总
+        long count = list.stream().distinct().count();
+        // 普通求和
+        int sum = list.stream().mapToInt(i -> i * 2).sum();
 
         /**
-         * 截取前面5个元素，参数是跳过的个数
+         * limit 从第一个开始，截取前面5个元素，参数是跳过的个数
          */
-        result = list.stream().limit(50).collect(toList());
-        System.out.println(result);
+        result = list.stream().limit(5).collect(toList());
+        System.out.println("limit" + result);
 
         /**
-         * 跳过前面5个元素，参数是跳过的个数
+         * skip 从第一个开始，跳过前面5个元素，参数是跳过的个数
          */
-        result = list.stream().skip(50).collect(toList());
-        System.out.println(result);
+        result = list.stream().skip(5).collect(toList());
+        System.out.println("skip" + result);
 
         list.forEach(System.out::println);
-        list.forEach(i -> System.out.println(i));
-        list.forEach((Integer i) -> System.out.println(i));
+        list.forEach(System.out::println);
+        list.forEach(System.out::print);
         for (int i : list) {
             System.out.println(i);
         }

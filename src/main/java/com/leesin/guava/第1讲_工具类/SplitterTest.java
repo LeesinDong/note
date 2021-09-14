@@ -71,6 +71,7 @@ public class SplitterTest {
     }
 
     // cr 分割 按照字符 + 个数
+    // 这里的limit是分成几份的意思，会将后面所有的包括分隔符放在最后一个
     @Test
     public void testSplitOnSplitLimit() {
         List<String> result = Splitter.on("#").limit(3).splitToList("hello#world#java#google#scala");

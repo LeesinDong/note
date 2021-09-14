@@ -13,12 +13,17 @@ public class FilterApple {
     /**
      * 只有一个抽象方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，多个方法@FunctionalInterface会报错
      * 可以包含default 和 static方法，即使存在，也是认为是FunctionalInterface的，但是普通方法就不行
+     * Predicate等是特殊的定义好的Functional
      */
+
     /**
-     * Lambda是Functional的具体实现，Functional相当于只是一个接口、架子；Predicate是特殊的Functional
-     * 本质：===========【FunctionalInterface = lambda（唯一方法的具体实现)】 = 方法引用   即 接口方法 = 接口方法的具体实现=======
-     * 方法引用 == Lambda
+     * cr Functional(匿名内部【类】|| 实际接口子类)(语法糖) => lambda（语法糖） => 方法引用
+     *
+     *      接口子类 = 匿名子类
      */
+
+
+
     @FunctionalInterface
     public interface AppleFilter {
 
@@ -41,9 +46,6 @@ public class FilterApple {
 
     }
 
-    /**
-     * 这里 AppleFilter 本质和 predicate等是一样的
-     */
     public static List<Apple> findApple(List<Apple> apples, AppleFilter appleFilter) {
         List<Apple> list = new ArrayList<>();
 
@@ -58,8 +60,11 @@ public class FilterApple {
     public static class GreenAnd160WeightFilter implements AppleFilter {
 
         /**
+         * 略
+         *
          * 具体实现要指定类型，比如List<Apple> = new ArrayList<Apple>
-         * 这里lambda本质也是functional的具体实现，所以这里的Apple不能再是泛型，【如果希望用泛型，可以在已经有泛型的方法里面调用lambda，这样lambda的入参可以用外面包着这层的类型】
+         * 这里lambda本质也是functional的具体实现，所以这里的Apple不能再是泛型，
+         * 【如果希望用泛型，可以在已经有泛型的方法里面调用lambda，这样lambda的入参可以用外面包着这层的类型】
          */
         @Override
         public boolean filter(Apple apple) {
@@ -68,7 +73,6 @@ public class FilterApple {
     }
 
     public static class YellowLess150WeightFilter implements AppleFilter {
-
         @Override
         public boolean filter(Apple apple) {
             return ("yellow".equals(apple.getColor()) && apple.getWeight() < 150);
@@ -123,11 +127,22 @@ public class FilterApple {
         System.out.println(yellowList);*/
 
         /**
-         * Functional接口的唯一方法的 参数(这里是形参) + 接口具体实现
+         * cr 匿名内部类 等价于 lambda
          */
-        List<Apple> lambdaResult = findApple(list, apple -> "green".equals(apple.getColor()));
+        List<Apple> result = findApple(list, new AppleFilter() {
+            @Override
+            public boolean filter(Apple apple) {
+                if ("green".equals(apple.getColor())) {
+                    return true;
+                }
 
-        System.out.println(lambdaResult);
+                return false;
+            }
+        });
+        List<Apple> lambdaResult = findApple(list, apple -> "green".equals(apple.getColor()));
+        System.out.println("result" + lambdaResult);
+        System.out.println("result"+ result);
+
 
         /**
          * Runnable 也是 @FunctionalInterface 接口

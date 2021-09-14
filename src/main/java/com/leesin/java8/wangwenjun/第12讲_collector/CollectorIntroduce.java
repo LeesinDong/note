@@ -15,10 +15,10 @@ import static java.util.stream.Collectors.groupingBy;
 public class CollectorIntroduce {
 
     /**
-     * collector的作用 <br/>
-     * 1 reducing summarizing聚合和汇总 <br/>
-     * 2 grouping 分组 <br/>
-     * 3 partition 分片
+     * cr collector的作用
+     *  1 reducing summarizing聚合和汇总
+     *  2 grouping 分组
+     *  3 partition 分片
      */
     public static void main(String[] args) {
         List<Apple> list = Arrays.asList(new Apple("green", 150)

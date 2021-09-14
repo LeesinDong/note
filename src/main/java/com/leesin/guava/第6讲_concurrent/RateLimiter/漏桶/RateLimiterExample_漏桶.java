@@ -15,9 +15,9 @@ public class RateLimiterExample_漏桶
 {
 
     /**
-     * 令牌桶：匀速，控制速率
-     * create(double permitsPerSecond)
-     * permitsPerSecond 一秒钟允许n次操作，0.5 即为 2s 1次
+     * cr 令牌桶：匀速，控制速率
+     *  create(double permitsPerSecond)
+     *  permitsPerSecond 一秒钟允许n次操作，0.5 即为 2s 1次
      */
     private final static RateLimiter limiter = RateLimiter.create(0.5d);
 

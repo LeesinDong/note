@@ -1,4 +1,4 @@
-package com.leesin.java8.Interface.itheima_02;
+package com.leesin.java8.heima.Interface.itheima_02;
 
 /*
     需求：

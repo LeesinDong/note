@@ -1,4 +1,4 @@
-package com.leesin.java8.functionInterface.itheima_02;
+package com.leesin.java8.heima.functionInterface.itheima_02;
 
 import java.util.ArrayList;
 import java.util.Collections;

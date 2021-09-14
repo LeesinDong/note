@@ -57,7 +57,7 @@ public class JoinerTest {
 
     }
     /**
-     * join 有null
+     * join 有null 抛出空指针
      */
     @Test(expected = NullPointerException.class)
     public void testJoinOnJoinWithNullValue() {
@@ -117,7 +117,8 @@ public class JoinerTest {
      */
     @Test
     public void testJoinOnWithMap() {
-        assertThat(Joiner.on('#').withKeyValueSeparator("=").join(stringMap), equalTo("Hello=Guava#Java=Scala"));
+        assertThat(Joiner.on('#').withKeyValueSeparator("=").join(stringMap),
+                equalTo("Hello=Guava#Java=Scala"));
     }
 
     /**
@@ -140,7 +141,8 @@ public class JoinerTest {
      */
     @Test
     public void testJoiningByStreamSkipNullValues() {
-        String result = stringListWithNullValue.stream().filter(item -> item != null && !item.isEmpty()).collect(joining("#"));
+        String result = stringListWithNullValue.stream().filter(item -> item != null && !item.isEmpty())
+                .collect(joining("#"));
         assertThat(result, equalTo("Google#Guava#Java#Scala"));
     }
     @Test

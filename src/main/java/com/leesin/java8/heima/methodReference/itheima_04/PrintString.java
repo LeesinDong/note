@@ -1,4 +1,4 @@
-package com.leesin.java8.methodReference.itheima_04;
+package com.leesin.java8.heima.methodReference.itheima_04;
 
 public class PrintString {
     //把字符串参数变成大写的数据，然后在控制台输出

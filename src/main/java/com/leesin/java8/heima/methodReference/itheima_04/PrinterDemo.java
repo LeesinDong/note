@@ -1,4 +1,4 @@
-package com.leesin.java8.methodReference.itheima_04;
+package com.leesin.java8.heima.methodReference.itheima_04;
 
 /*
     练习

@@ -2,6 +2,7 @@ package com.leesin.java8.wangwenjun.第5讲_stream.第8讲_find_match_reduce;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -13,16 +14,7 @@ public class StreamReduce {
 
         Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         /**
-         * 1 有初始值返回的是结果，有初始值的会把【初始值 + list中所有的】
-         * 2 没有初始值，返回的是Optional，没有初始值的，只会把【list中所有的】相加
-         */
-
-        /**
-         * 下面是例子
-         */
-
-        /**
-         * 1 求和 【有初始值返回的是结果】
+         * 1 求和 【有初始值返回的是结果】【初始值 + list中所有的】
          */
         Integer result = stream.reduce(0, Integer::sum);
         // Integer result = stream.reduce(2, Integer::sum);
@@ -31,10 +23,12 @@ public class StreamReduce {
         System.out.println(result);
 
         /**
-         * 1 求和 【没有初始值，返回的是Optional】
+         * 1 求和 【没有初始值，返回的是Optional】【只会把list中所有的相加】
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
-        stream.reduce((i, j) -> i + j).ifPresent(System.out::println);
+        stream.reduce(Integer::sum).ifPresent(System.out::println);
+
+
 
         /**
          * 2 最大值
@@ -43,6 +37,10 @@ public class StreamReduce {
         stream.reduce(Integer::max).ifPresent(System.out::println);
         // 等效于这里
         stream.reduce((i, j) -> i > j ? i : j).ifPresent(System.out::println);
+
+
+
+
 
         /**
          * 3 最小值
@@ -53,6 +51,8 @@ public class StreamReduce {
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         stream.reduce((i, j) -> i > j ? j : i).ifPresent(System.out::println);
 
+
+
         /**
          * 4 偶数元素相乘
          */
@@ -60,5 +60,13 @@ public class StreamReduce {
         int result2 = stream.filter(i -> i % 2 == 0).reduce(1, (i, j) -> i * j);
         Optional.of(result2).ifPresent(System.out::println);
 
+    }
+
+    public void test() {
+        int reduce1 = IntStream.rangeClosed(1, 7).reduce(0, Integer::sum);
+        IntStream.rangeClosed(1, 7).boxed().reduce(Integer::sum);
+        IntStream.rangeClosed(1, 7).boxed().reduce(Integer::max);
+        IntStream.rangeClosed(1, 7).boxed().reduce(Integer::min);
+        IntStream.rangeClosed(1, 7).boxed().filter(i -> i % 2 == 0).reduce(Integer::sum);
     }
 }

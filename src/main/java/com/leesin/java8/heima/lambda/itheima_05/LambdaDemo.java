@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_05;
+package com.leesin.java8.heima.lambda.itheima_05;
 
 /*
     Lambda表达式的省略模式

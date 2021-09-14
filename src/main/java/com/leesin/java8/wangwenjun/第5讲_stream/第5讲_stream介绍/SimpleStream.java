@@ -28,9 +28,8 @@ public class SimpleStream {
                 new Dish("salmon", false, 450, Dish.Type.FISH));
 
         /**
-         * 这里会报错，stream只能被操作一次，第一次操作完了，stream就已经关闭了。
-         */
-        /**
+         * 这里会报错，cr stream只能被操作一次，第一次操作完了，stream就已经关闭了。
+         *
          * stream中spliterator()就是并行的原因，根据cpu将list进行分割的，做到真正的并行处理
          */
         Stream<Dish> stream = menu.stream();
@@ -43,7 +42,7 @@ public class SimpleStream {
          */
         /**
          * 分为intermediate和terminal
-         * intermediate会输入stream并返回一个stream，terminal会终端stream（foreach）
+         * cr intermediate会输入stream并返回一个stream，terminal会终端stream（foreach）
          */
         Stream<Dish> dishStream = Stream.of(new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("salmon", false, 450, Dish.Type.FISH));
@@ -69,7 +68,7 @@ public class SimpleStream {
          * filtering->
          * map->
          *
-         * 是filter - map ，如此循环，而不是filter全部完了再全部map，由此可见是连续的
+         * cr 是filter - map ，如此循环，而不是filter全部完了再全部map，由此可见是连续的
          */
 
 
@@ -91,7 +90,7 @@ public class SimpleStream {
      */
     private static List<String> getDishNamesByStream(List<Dish> menu) {
         /**
-         * 并行流
+         * cr 并行流
          * jconsole 发现会多几个fork join 线程，通过fork join实现并行流的
          */
         return menu.parallelStream().filter(d -> {

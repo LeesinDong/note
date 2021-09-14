@@ -61,8 +61,8 @@ public class SpliteratorInAction {
         IntStream intStream = IntStream.rangeClosed(0, 100);
 
         /**
-         * 这里最后还是全部以并行执行的，因为只是parallel方法只是赋值为sourceStage.parallel = true;最后还是true
-         * 所以filter、map都是并行执行，而不是所想的map以串行执行
+         * cr 这里最后还是全部以并行执行的，因为只是parallel方法只是赋值为sourceStage.parallel = true;最后还是true
+         *  所以filter、map都是并行执行，而不是所想的map以串行执行
          */
         intStream
                 .parallel() // 并行
@@ -116,6 +116,7 @@ public class SpliteratorInAction {
 
             /**
              * 能消费到就消费，消费不到就返回false
+             *
              * @param action
              * @return
              */

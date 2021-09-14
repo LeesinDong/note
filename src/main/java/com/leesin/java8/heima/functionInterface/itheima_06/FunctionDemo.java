@@ -1,4 +1,4 @@
-package com.leesin.java8.functionInterface.itheima_06;
+package com.leesin.java8.heima.functionInterface.itheima_06;
 
 import java.util.function.Function;
 

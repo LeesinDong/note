@@ -12,7 +12,7 @@ public class NumericStream {
 
     public static void main(String[] args) {
         /**
-         * 本质：拆箱、装箱
+         * cr 本质：拆箱(节省内存)、装箱（复杂操作）
          * mapToInt、box.map | maoToObject
          */
 
@@ -20,6 +20,7 @@ public class NumericStream {
          * 1 拆箱
          * 好处：节省内存，普通的stream返回里面是Integer，int类型占用的内存更小（4byte，32bit），所以希望int类型的Stream
          * 本质：就是mapToInt方法，返回的是IntStream，IntStream后续操作都是Intxxx的function
+         * 纯数字的时候用IntStream操作节省内存
          */
         Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         IntStream intStream = stream.mapToInt(i -> i.intValue());
@@ -30,8 +31,8 @@ public class NumericStream {
 
         /**
          * 2 装箱
-         * 好处：inStream Map不能返回数组类型，有的需求不满足，Object类型的Map等函数功能更丰富
-         * 本质：boxed().map || mapToObject
+         * 好处：inStream Map不能返回数组类型，有的需求不满足，cr Object类型的Map等函数功能更丰富
+         * 本质：cr boxed().map || mapToObject
          */
         int a = 9;
         //1..1000
@@ -40,6 +41,7 @@ public class NumericStream {
          * .boxed().map
          */
         /**
+         * 是否close说的是右边，左边一定是闭的
          * rangeClose []
          * range [)
          */

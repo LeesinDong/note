@@ -10,6 +10,7 @@ import org.junit.Test;
 public class  CharStreamsTest {
 
     /**
+     * cr 略
      * charStream、byteStream只是为了兼容老的
      * 他们的操作都可以用charSource、byteSource替代掉
      */

@@ -38,6 +38,9 @@ public class ObjectsExample {
             this.releaseDate = releaseDate;
         }
 
+        /**
+         * MoreObjects
+         */
         @Override
         public String toString() {
             return MoreObjects.toStringHelper(this).omitNullValues()
@@ -51,10 +54,17 @@ public class ObjectsExample {
             return Objects.hashCode(manufacturer, version, releaseDate);
         }
 
+        /**
+         * Objects.equals 变成 Objects.equal
+         */
         @Override
         public boolean equals(Object obj) {
-            if (this == obj) return true;
-            if (obj == null || getClass() != obj.getClass()) return false;
+            if (this == obj) {
+                return true;
+            }
+            if (obj == null || getClass() != obj.getClass()) {
+                return false;
+            }
 
             Guava guava = (Guava) obj;
 
@@ -66,7 +76,8 @@ public class ObjectsExample {
         @Override
         public int compareTo(Guava o) {
             return ComparisonChain.start().compare(this.manufacturer, o.manufacturer)
-                    .compare(this.version, o.version).compare(this.releaseDate, o.releaseDate).result();
+                    .compare(this.version, o.version)
+                    .compare(this.releaseDate, o.releaseDate).result();
         }
 
 

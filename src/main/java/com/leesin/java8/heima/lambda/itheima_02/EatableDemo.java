@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_02;
+package com.leesin.java8.heima.lambda.itheima_02;
 
 /*
     Lambda表达式的格式：(形式参数) -> {代码块}
@@ -12,11 +12,11 @@ package com.leesin.java8.lambda.itheima_02;
 public class EatableDemo {
     public static void main(String[] args) {
         //在主方法中调用useEatable方法
-        Eatable e = new EatableImpl();
+        com.leesin.java8.heima.lambda.itheima_02.Eatable e = new com.leesin.java8.heima.lambda.itheima_02.EatableImpl();
         useEatable(e);
 
         //匿名内部类
-        useEatable(new Eatable() {
+        useEatable(new com.leesin.java8.heima.lambda.itheima_02.Eatable() {
             @Override
             public void eat() {
                 System.out.println("一天一苹果，医生远离我");
@@ -29,7 +29,7 @@ public class EatableDemo {
         });
     }
 
-    private static void useEatable(Eatable e) {
+    private static void useEatable(com.leesin.java8.heima.lambda.itheima_02.Eatable e) {
         e.eat();
     }
 }

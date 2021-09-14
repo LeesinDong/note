@@ -38,10 +38,11 @@ public class FilesTest {
         File targetFile = new File(TARGET_FILE);
         File sourceFile = new File(SOURCE_FILE);
         /**
-         * Files.copy 拷贝到一个新的文件，没有则创建
+         * cr Files.copy 拷贝到一个新的文件，没有则创建
          */
         Files.copy(sourceFile, targetFile);
         assertThat(targetFile.exists(), equalTo(true));
+        // 转化成byteSource的hash还是应该相等的 md5
         HashCode sourceHashCode = Files.asByteSource(sourceFile).hash(Hashing.sha256());
         HashCode targetHashCode = Files.asByteSource(targetFile).hash(Hashing.sha256());
         assertThat(sourceHashCode.toString(), equalTo(targetHashCode.toString()));
@@ -50,7 +51,7 @@ public class FilesTest {
     @Test
     public void testCopyFileWithJDKNio2() throws IOException {
         /**
-         * nio实现copy
+         * nio实现copy 略
          */
         java.nio.file.Files.copy(
                 Paths.get("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\test\\resources", "io", "source.txt"),
@@ -67,7 +68,7 @@ public class FilesTest {
         try {
             //prepare for data.
             /**
-             * Files.move() 从一个文件移动到另一个文件，没有则创建，原来的文件会删除
+             * cr Files.move() 从一个文件移动到另一个文件，没有则创建，原来的文件会删除
              */
             Files.move(new File(SOURCE_FILE), new File(TARGET_FILE));
             assertThat(new File(TARGET_FILE).exists(), equalTo(true));
@@ -87,7 +88,7 @@ public class FilesTest {
                 "The guava source code is very cleanly and nice.";
 
         /**
-         * 一行一行的读文件
+         * cr 一行一行的读文件
          */
         List<String> strings = Files.readLines(new File(SOURCE_FILE), Charsets.UTF_8);
 
@@ -102,7 +103,7 @@ public class FilesTest {
         // [43, 79, 46, 0, 47]
 
         /**
-         * readLines(lineProcessor); 读取每一行的时候进行其他的处理。
+         * cr readLines(lineProcessor); 读取每一行的时候进行其他的处理。 通过字符流进行读取的时候
          */
         LineProcessor<List<Integer>> lineProcessor = new LineProcessor<List<Integer>>() {
 
@@ -113,7 +114,10 @@ public class FilesTest {
                 /**
                  * 源码中如果某个是false，则break，丢弃后面的遍历
                  */
-                if (line.length() == 0) return false;
+                if (line.length() == 0) {
+                    return false;
+                }
+
                 lengthList.add(line.length());
                 return true;
             }
@@ -137,7 +141,7 @@ public class FilesTest {
         File file = new File(SOURCE_FILE);
 //        Files.hash(file, Hashing.goodFastHash(128));
         /**
-         * 文件的Hash
+         * cr 文件的Hash，通过字节流拿到
          */
         HashCode hashCode = Files.asByteSource(file).hash(Hashing.sha256());
         System.out.println(hashCode);
@@ -150,11 +154,11 @@ public class FilesTest {
         testFile.deleteOnExit();
         String content1 = "content 1";
         /**
-         * 写文件内容
+         * cr 写文件内容
          */
         Files.asCharSink(testFile, Charsets.UTF_8).write(content1);
         /**
-         * 读文件内容
+         * cr 读文件内容
          */
         String actully = Files.asCharSource(testFile, Charsets.UTF_8).read();
 
@@ -172,14 +176,14 @@ public class FilesTest {
         File testFile = new File(testPath);
         testFile.deleteOnExit();
         /**
-         * append 追加文件, 和普通的写相比就多了一个FileWriteMode.APPEND
+         * cr append 追加文件, 和普通的写相比就多了一个FileWriteMode.APPEND
          */
         CharSink charSink = Files.asCharSink(testFile, Charsets.UTF_8, FileWriteMode.APPEND);
         charSink.write("content1");
         String actullay = Files.asCharSource(testFile, Charsets.UTF_8).read();
         assertThat(actullay, equalTo("content1"));
 
-
+        // 再次write就是追加了
         charSink.write("content2");
         actullay = Files.asCharSource(testFile, Charsets.UTF_8).read();
         assertThat(actullay, equalTo("content1content2"));
@@ -190,7 +194,7 @@ public class FilesTest {
         File touchFile = new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\test\\resources\\io\\touch.txt");
         touchFile.deleteOnExit();
         /**
-         * touch 创建文件
+         * cr touch 创建文件
          */
         Files.touch(touchFile);
         assertThat(touchFile.exists(), equalTo(true));
@@ -218,10 +222,12 @@ public class FilesTest {
         }*/
 
 
-        if (root.isHidden()) return;
-        if (root.isFile())
+        if (root.isHidden()) {
+            return;
+        }
+        if (root.isFile()) {
             fileList.add(root);
-        else {
+        } else {
             File[] files = root.listFiles();
             for (File f : files) {
                 recursiveList(f, fileList);
@@ -234,7 +240,7 @@ public class FilesTest {
         File root = new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\main");
 //        FluentIterable<File> files = Files.fileTreeTraverser().preOrderTraversal(root);
         /**
-         * 树结构，正序输出
+         * cr 树结构，正序输出
          * a
          * a/b
          * c
@@ -248,7 +254,7 @@ public class FilesTest {
     public void testTreeFilesPostOrderTraversal() {
         File root = new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\main");
         /**
-         * 树结构，逆序输出
+         * cr 树结构，逆序输出
          * a/b
          * a
          * c/d
@@ -262,7 +268,7 @@ public class FilesTest {
     public void testTreeFilesBreadthFirstTraversal() {
         File root = new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\main");
         /**
-         * 树结构，按照宽度从小到大
+         * cr 树结构，按照宽度从小到大
          * a
          * a/b
          * a/b/c
@@ -275,7 +281,7 @@ public class FilesTest {
     public void testTreeFilesChild() {
         File root = new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\main");
         /**
-         * 树结构，输出root节点的儿子节点
+         * cr 树结构，输出root节点的儿子节点
          * a/b
          * a/c
          */
@@ -287,7 +293,8 @@ public class FilesTest {
     @After
     public void tearDown() {
         File targetFile = new File(TARGET_FILE);
-        if (targetFile.exists())
+        if (targetFile.exists()) {
             targetFile.delete();
+        }
     }
 }

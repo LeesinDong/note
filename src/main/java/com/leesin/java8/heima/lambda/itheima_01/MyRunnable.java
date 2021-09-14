@@ -1,4 +1,4 @@
-package com.leesin.java8.lambda.itheima_01;
+package com.leesin.java8.heima.lambda.itheima_01;
 
 public class MyRunnable implements Runnable {
 

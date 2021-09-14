@@ -20,14 +20,14 @@ public class OptionalInAction {
     private static String getInsuranceNameByOptional(Person person) {
 
         /**
-         * map flatMap的本质区别：【返回值】
-         * 1 Map apply完了之后包装了一层optional
-         * 2 flatMap apply完了之后返回值就是Optional则直接返回，没有再包装
+         * cr optional map flatMap的本质区别：【返回值】
+         *  1 Map apply完了之后包装了一层optional
+         *  2 flatMap apply完了之后返回值就是Optional则直接返回，没有再包装
          *
-         * 如何判断？
-         * xxx.getxxx方法的返回值是普通类则用Map，是Optional则用flatMap
+         *  如何判断？
+         *  xxx.getxxx方法的返回值是普通类则用Map，是Optional则用flatMap
          *
-         * 更多参看源码即可
+         *  更多参看源码即可
          */
         // 下面会报错
         // Optional.ofNullable(person)

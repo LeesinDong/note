@@ -1,10 +1,12 @@
 package com.leesin.java8.wangwenjun.第5讲_stream.第7讲_filter_distinct_skip_limit_map_flatmap;
 
+import com.google.common.collect.Lists;
 import com.leesin.java8.wangwenjun.第5讲_stream.第5讲_stream介绍.Dish;
+import org.elasticsearch.common.Strings;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -24,8 +26,8 @@ public class StreamMap {
         List<Integer> result = list.stream().map(i -> i * 2).collect(toList());
         System.out.println(result);
         // 对象
-        listDish().stream().map(d -> d.getName()).forEach(System.out::println);
-        List<String> dishes = listDish().stream().map(d -> d.getName()).collect(toList());
+        listDish().stream().map(Dish::getName).forEach(System.out::println);
+        List<String> dishes = listDish().stream().map(Dish::getName).collect(toList());
         System.out.println(dishes);
 
         /**
@@ -34,17 +36,13 @@ public class StreamMap {
         //flatmap flat (扁平化)
         String[] words = {"Hello", "World"};
         //{h,e,l,l,o},{W,o,r,l,d}
-        Stream<String[]> stream = Arrays.stream(words).map(w -> w.split(""));
-        //H,e,l,l,o,W,o,r,l,d
         /**
          * 入参是 泛型为：【数组 或 List】 的Stream，必须是Stream<T> 中的T是数组 或 List，即双层数组结构
          * 参数是 Arrays::stream 或 Collection::stream
          */
-        Stream<String> stringStream = stream.flatMap(Arrays::stream);
-        stringStream.distinct().forEach(System.out::println);
-
+        Arrays.stream(words).map(Strings::splitStringByCommaToArray).flatMap(Arrays::stream).forEach(System.out::print);
+        Arrays.stream(words).map(Lists::charactersOf).flatMap(Collection::stream).forEach(System.out::print);
     }
-
 
     private static List<Dish> listDish() {
         List<Dish> menu = Arrays.asList(
