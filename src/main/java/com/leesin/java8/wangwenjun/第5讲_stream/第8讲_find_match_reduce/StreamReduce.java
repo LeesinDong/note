@@ -14,7 +14,7 @@ public class StreamReduce {
 
         Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         /**
-         * 1 求和 【有初始值返回的是结果】【初始值 + list中所有的】
+         * cr 1 求和 【有初始值返回的是结果】【初始值 + list中所有的】
          */
         Integer result = stream.reduce(0, Integer::sum);
         // Integer result = stream.reduce(2, Integer::sum);
@@ -23,7 +23,7 @@ public class StreamReduce {
         System.out.println(result);
 
         /**
-         * 1 求和 【没有初始值，返回的是Optional】【只会把list中所有的相加】
+         * cr 1 求和 【没有初始值，返回的是Optional】【只会把list中所有的相加】
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         stream.reduce(Integer::sum).ifPresent(System.out::println);
@@ -31,7 +31,7 @@ public class StreamReduce {
 
 
         /**
-         * 2 最大值
+         * cr 2 最大值
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         stream.reduce(Integer::max).ifPresent(System.out::println);
@@ -43,7 +43,7 @@ public class StreamReduce {
 
 
         /**
-         * 3 最小值
+         * cr 3 最小值
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         stream.reduce(Integer::min).ifPresent(System.out::println);
@@ -54,7 +54,7 @@ public class StreamReduce {
 
 
         /**
-         * 4 偶数元素相乘
+         * cr 4 偶数元素相乘
          */
         stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});
         int result2 = stream.filter(i -> i % 2 == 0).reduce(1, (i, j) -> i * j);

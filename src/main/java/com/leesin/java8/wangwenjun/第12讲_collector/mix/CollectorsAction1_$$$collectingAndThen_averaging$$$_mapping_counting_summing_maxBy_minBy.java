@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
  * @Date:2016/10/27 QQ:532500648
  * QQ交流群:286081824
  ***************************************/
-public class CollectorsAction1_$$$collectingAndThen_averaging$$$_mapping_counting_summing_maxBy_minBy {
+public class
+CollectorsAction1_$$$collectingAndThen_averaging$$$_mapping_counting_summing_maxBy_minBy {
 
 
     public static List<Dish> menu = Arrays.asList(

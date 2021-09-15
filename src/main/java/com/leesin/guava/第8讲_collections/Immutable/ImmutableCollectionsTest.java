@@ -57,7 +57,7 @@ public class ImmutableCollectionsTest
     }
 
     /**
-     * 创建4
+     * 创建4  immutableMap
      */
     @Test
     public void testImmutableMap()

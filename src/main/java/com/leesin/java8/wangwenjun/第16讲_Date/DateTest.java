@@ -77,7 +77,7 @@ public class DateTest {
         LocalDate localDate = LocalDate.now();
         LocalTime time = LocalTime.now();
         /**
-         * 组合 LocalDate LocalTime
+         * cr 组合 LocalDate LocalTime
          */
         LocalDateTime localDateTime = LocalDateTime.of(localDate, time);
         System.out.println(localDateTime.toString());
@@ -87,13 +87,13 @@ public class DateTest {
 
     private static void testInstant() throws InterruptedException {
         /**
-         * 点
+         * cr 点
          */
         Instant start = Instant.now();
         Thread.sleep(1000L);
         Instant end = Instant.now();
         /**
-         * 两个点生成段
+         * cr 两个点生成段
          */
         Duration duration = Duration.between(start, end);
         System.out.println(duration.toMillis());
@@ -105,14 +105,14 @@ public class DateTest {
         // 减去一小时
         LocalTime beforeTime = time.minusHours(1);
         /**
-         * 两个点生成段
+         * cr 两个点生成段
          */
         Duration duration = Duration.between(time, beforeTime);
         System.out.println(duration.toHours());
     }
 
     /**
-     * Period 时代，用于时间跨度大的 时间段, 本质和duration一样
+     * cr Period 时代，用于时间跨度大的 时间段, 本质和duration一样
      */
     private static void testPeriod() {
         Period period = Period.between(LocalDate.of(2014, 1, 10), LocalDate.of(2016, 1, 10));
@@ -123,7 +123,7 @@ public class DateTest {
 
     // cr format、parse
     /**
-     * format
+     * cr format
      */
     private static void testDateFormat() {
         /**
@@ -144,7 +144,7 @@ public class DateTest {
     }
 
     /**
-     * parse
+     * cr parse
      */
     private static void testDateParse() {
         String date1 = "20161113";

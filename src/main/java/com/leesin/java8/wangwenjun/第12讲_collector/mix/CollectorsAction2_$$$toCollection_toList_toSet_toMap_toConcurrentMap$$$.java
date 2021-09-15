@@ -7,8 +7,11 @@ package com.leesin.java8.wangwenjun.第12讲_collector.mix;
  ***************************************/
 
 import com.leesin.java8.wangwenjun.第5讲_stream.第5讲_stream介绍.Dish;
+import org.apache.curator.shaded.com.google.common.collect.Lists;
+import org.junit.Test;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.stream.Collectors;
 
@@ -83,13 +86,11 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
 
 
 
-
-
     /**
      * toMap和上面的toConcurrentMap一样的操作，只是换了名字
      */
     /**
-     * toMap1
+     * cr toMap1
      */
     private static void testToMap() {
         System.out.println("testToMap");
@@ -98,6 +99,7 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
          */
         Optional.of(menu.stream().collect(
                 Collectors.collectingAndThen(
+                        // cr
                         Collectors.toMap(Dish::getName, Dish::getCalories),
                         Collections::synchronizedMap))
         )
@@ -128,7 +130,7 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
         }
     }
     /**
-     * toMap1
+     * cr toMap1
      * Type:Total
      */
     private static void testToMapWithBinaryOperator() {
@@ -141,7 +143,7 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
                 });
     }
     /**
-     * toMap1
+     * cr toMap1
      * Type:Total
      */
     private static void testToMapWithBinaryOperatorAndSupplier() {
@@ -158,12 +160,11 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
 
 
 
-
     /**
      * toConcurrentMap
      */
     /**
-     * toConcurrentMap1（key, value）
+     * cr toConcurrentMap1（key, value）
      */
     private static void testToConcurrentMap() {
         System.out.println("testToConcurrentMap");
@@ -175,7 +176,7 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
                 });
     }
     /**
-     * toConcurrentMap2（key, value, mergeFunction）
+     * cr toConcurrentMap2（key, value, mergeFunction）
      * 当前例子功能：Type:Total   即：每个类型的数量
      */
     private static void testToConcurrentMapWithBinaryOperator() {
@@ -187,8 +188,15 @@ public class CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMa
                     System.out.println(v.getClass());
                 });
     }
+
+    @Test
+    public void test(){
+        List<Integer> es = Lists.newArrayList(1, 2, 3, 1);
+        ConcurrentMap<Integer, Integer> collect = es.stream().collect(Collectors.toConcurrentMap(i -> i, i -> i, (a, b) -> a + b));
+        System.out.println(collect);
+    }
     /**
-     * toConcurrentMap3（key, value, mergeFunction，mapFactory）
+     * cr toConcurrentMap3（key, value, mergeFunction，mapFactory）
      * Type:Total
      */
     private static void testToConcurrentMapWithBinaryOperatorAndSupplier() {

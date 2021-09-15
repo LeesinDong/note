@@ -104,7 +104,7 @@ public class SplitterTest {
     }
 
 
-    // cr 分割形成Map
+    // cr 分割形成Map withKeyValueSeparator
     @Test
     public void testSplitOnSplitToMap() {
         Map<String, String> result = Splitter.on(Pattern.compile("\\|")).trimResults()

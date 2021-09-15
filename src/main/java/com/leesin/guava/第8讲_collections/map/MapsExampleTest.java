@@ -40,7 +40,7 @@ public class MapsExampleTest
     }
 
     /**
-     * 就是map
+     * 更新所有value值
      */
     @Test
     public void testTransform()
@@ -52,7 +52,7 @@ public class MapsExampleTest
     }
 
     /**
-     * 就是filter
+     * 根据key filter map
      */
     @Test
     public void testFilter()

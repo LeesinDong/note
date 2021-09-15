@@ -30,6 +30,8 @@ public class FunctionExample {
         //   可以这么用：list.stream().map(Functions.toStringFunction())
         //   ，因为它们都继承了8的function、supplier、predicates，凡是8用到这三个的地方，都想想用三个能不能简化操作，声明式编程
         //   也可以直接apply
+        //   因为function等都是一件事，表达一件事，stream里面传递的是原材料，拿来用就好了
+        //
 
 
 

@@ -11,7 +11,8 @@ public class FilterApple {
 
 
     /**
-     * 只有一个抽象方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，多个方法@FunctionalInterface会报错
+     * 只有一个抽象方法的接口可以用Lambda替代匿名内部类，可以用@FunctionalInterface标注，不标注也行，但是要一个方法，
+     * 多个方法@FunctionalInterface会报错
      * 可以包含default 和 static方法，即使存在，也是认为是FunctionalInterface的，但是普通方法就不行
      * Predicate等是特殊的定义好的Functional
      */

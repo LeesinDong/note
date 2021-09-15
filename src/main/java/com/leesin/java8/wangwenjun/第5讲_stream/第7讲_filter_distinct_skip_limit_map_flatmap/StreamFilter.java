@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toList;
 public class StreamFilter {
 
     public static void main(String[] args) {
-
+        // cr 全部
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 6, 7, 7, 1);
 
         /**

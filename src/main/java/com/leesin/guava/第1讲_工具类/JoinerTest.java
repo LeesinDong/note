@@ -83,7 +83,7 @@ public class JoinerTest {
 
     }
 
-    // cr join append
+    // cr join appendTo
     /**
      * appendTo StrinBuilder
      */

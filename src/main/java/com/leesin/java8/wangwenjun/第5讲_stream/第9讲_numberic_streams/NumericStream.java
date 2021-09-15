@@ -19,7 +19,7 @@ public class NumericStream {
         /**
          * 1 拆箱
          * 好处：节省内存，普通的stream返回里面是Integer，int类型占用的内存更小（4byte，32bit），所以希望int类型的Stream
-         * 本质：就是mapToInt方法，返回的是IntStream，IntStream后续操作都是Intxxx的function
+         * cr 本质：就是mapToInt方法，返回的是IntStream，IntStream后续操作都是Intxxx的function
          * 纯数字的时候用IntStream操作节省内存
          */
         Stream<Integer> stream = Arrays.stream(new Integer[]{1, 2, 3, 4, 5, 6, 7});

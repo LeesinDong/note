@@ -36,9 +36,9 @@ public class MethodReference {
         // cr stream|optional 方法引用本质：stream只传一个对象，故只支持以下格式：参数 <= 1 | 0 (当前可以支持的参数)
         //  1 静态方法(stream)、静态方法()-supplier || 构造方法(stream)、构造方法()-supplier
         //  2 stream类::对象方法(空参) --- 调用stream里面对象的方法,【stream里面的东西会首先尝试当做方法的参数而不是对象类型，所以会报错】
-        //  3 其他对象::对象方法(stream)、其他对象::对象方法(stream)-supplier
+        //  3 其他对象::对象方法(stream)、其他对象::对象方法()-supplier
 
-        // cr =======================================================
+        // cr ========================重要===============================
         //  本质再总结
         //  ********stream optional中的操作都尽量用方法引用想 （stream对象方法 || guava静态方法）*******
         //  根据stream或optional提供的东西来判定走哪个方法
@@ -47,7 +47,7 @@ public class MethodReference {
         //  2 其他类的方法 1 3 --- 单参(stream传) 或 空参(supplier)
         //
         //  cr 也支持多个参数，比如biFunction，比如reduce方法，这里符合13
-        //  =======================================================
+        //   =======================================================
         ArrayList<Object> copyList = Lists.newArrayList();
         // 1
         appleList.forEach(System.out::print);

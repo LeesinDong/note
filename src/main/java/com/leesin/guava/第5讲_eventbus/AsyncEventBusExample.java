@@ -26,6 +26,7 @@ public class AsyncEventBusExample
         // EventBus eventBus = new AsyncEventBus(Runnable::run);
         // EventBus eventBus = new AsyncEventBus(new Sequence());
 
+        // 这一种是异步的
         AsyncEventBus eventBus = new AsyncEventBus(Executors.newFixedThreadPool(4));
 
         AsyncEventBus eventBus1 = new AsyncEventBus(new SeqExecutor());

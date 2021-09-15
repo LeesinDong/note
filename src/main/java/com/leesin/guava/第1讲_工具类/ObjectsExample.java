@@ -39,7 +39,7 @@ public class ObjectsExample {
         }
 
         /**
-         * MoreObjects
+         * cr MoreObjects
          */
         @Override
         public String toString() {
@@ -55,7 +55,7 @@ public class ObjectsExample {
         }
 
         /**
-         * Objects.equals 变成 Objects.equal
+         * cr Objects.equals 变成 Objects.equal
          */
         @Override
         public boolean equals(Object obj) {

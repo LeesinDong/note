@@ -93,7 +93,7 @@ public class CacheLoaderTest2_驱逐策略_超时时间_弱引用_软引用
     }
 
     /**
-     * 驱逐策略4 弱引用
+     * cr 驱逐策略4 弱引用
      * gc的时候驱逐
      */
     @Test
