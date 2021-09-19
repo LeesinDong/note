@@ -1,4 +1,4 @@
-package com.leesin.java8.me.design;
+package com.leesin.java8.me.design.model.重试;
 
 import java.util.function.Supplier;
 

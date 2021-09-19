@@ -34,7 +34,6 @@ public class TableExampleTest
         table.put("Database", "Mysql", "7.0");
         // {Language={Java=1.8, Scala=2.3}, Database={Oracle=12C, Mysql=7.0}}
         System.out.println(table);
-
         Map<String, String> language = table.row("Language");
         assertThat(language.containsKey("Java"), is(true));
         // cr row 和 column 都会生成 Map<String,Map<String,String>>，两个Map中的<row, <column, value>> <column, <key, value>>
@@ -45,5 +44,6 @@ public class TableExampleTest
         // 单元格  [(Language,Java)=1.8, (Language,Scala)=2.3, (Database,Oracle)=12C, (Database,Mysql)=7.0]
         Set<Table.Cell<String, String, String>> cells = table.cellSet();
         System.out.println(cells);
+
     }
 }

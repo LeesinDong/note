@@ -1,4 +1,4 @@
-package com.leesin.java8.me.design;
+package com.leesin.java8.me.design.model.模板;
 
 import com.google.common.base.Preconditions;
 import org.junit.Test;
