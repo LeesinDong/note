@@ -13,7 +13,7 @@ public class IntegerNPE {
     }
 
     /**
-     * int null NPE
+     * int null NPE 自动拆箱导致
      * @param value
      */
     public static void testInt(int value) {

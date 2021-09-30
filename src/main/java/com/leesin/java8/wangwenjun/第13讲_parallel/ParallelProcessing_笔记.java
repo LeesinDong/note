@@ -39,6 +39,8 @@ public class ParallelProcessing_笔记 {
          *
          * cr HashSet              Good
          *    TreeSet              Good
+         *
+         * cr 中间使用limit         Poor
          */
 
         /**

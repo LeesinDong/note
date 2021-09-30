@@ -69,6 +69,10 @@ public class OptionalUsage {
          */
         System.out.println(nameOptional.isPresent());
         nameOptional.ifPresent(System.out::println);
+        /**
+         * get
+         */
+        String s = nameOptional.get();
 
 
         System.out.println(getInsuranceName(null));
