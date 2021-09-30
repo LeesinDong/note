@@ -38,8 +38,16 @@ public class StreamMap {
         String[] words = {"Hello", "World"};
         //{h,e,l,l,o},{W,o,r,l,d}
         /**
-         * 入参是 泛型为：【数组 或 List】 的Stream，必须是Stream<T> 中的T是数组 或 List，即双层数组结构
-         * 参数是 Arrays::stream 或 Collection::stream
+         * 执行了两件事：1 每个值都换成另一个流，2 所有的流连接起来成为一个流
+         *
+         * 入参是 泛型为：【数组 或 List】 的Stream，必须是Stream<T> 中的T是数组 或 List，不一定是双层数组结构
+         * 参数是 Arrays::stream 或 Collection::stream 或者其他流操作
+         * 这里是 1 先执行 【Arrays::stream 或 Collection::stream 或者其他流操作】，变成每个小流（list或数组），2 再并入到一个流中
+         *
+         * cr 1 都是stream中每个值变成新的stream：stream<stream<>>
+         *    Arrays::stream 或 Collection::stream 是： stream<String[]> -> stream<stream<String>>，
+         *    本质还是数组(一层里面的一个元素)变成了新流
+         *    笛卡尔积是：stream<A> -> stream<stream<a, b>>, 本质是A(一层里面的一个元素)变成了新流
          */
         Arrays.stream(words).map(Strings::splitStringByCommaToArray).flatMap(Arrays::stream).forEach(System.out::print);
         Arrays.stream(words).map(Lists::charactersOf).flatMap(Collection::stream).forEach(System.out::print);

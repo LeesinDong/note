@@ -104,6 +104,7 @@ public class CollectorsAction4_$$$groupby_partition$$$ {
 
     /**
      * cr partitionBy 和 groupingBy的区别，这里是supplier，是根据true false分两组
+     *      partitionBy 是 groupingBy的变体，用的较少
      */
     /**
      * partitionBy1 根据Predicate进行分组，Map<true=[], false=[]>

@@ -16,6 +16,8 @@ import java.io.InputStream;
  ***************************************/
 public class CloserTest {
 
+    // cr 这里相当于 try-with-resource， 只不过，try 是为了获取try里面的，这里是catch里面的
+
     @Test
     public void testCloser() throws IOException {
         ByteSource byteSource = Files.asByteSource(new File("C:\\Users\\wangwenjun\\IdeaProjects\\guava_programming\\src\\test\\resources\\io\\files.PNG"));

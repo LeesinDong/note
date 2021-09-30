@@ -47,7 +47,8 @@ public class CreateStream {
     }
 
     /**
-     * 3 Arrays.stream(数组)   例如Arrays.stream(new String[])
+     * 23 本质都是数组提供的
+     * 2 Arrays.stream(数组)   例如Arrays.stream(new String[])
      */
     private static Stream<String> createStreamFromArrays() {
         String[] strings = {"hello", "alex", "wangwenjun", "world", "stream"};
@@ -55,7 +56,7 @@ public class CreateStream {
     }
 
     /**
-     * 3 Stream.of()
+     * 3 Stream.of()   数组
      */
     private static Stream<String> createStreamFromValues() {
         return Stream.of("hello", "alex", "wangwenjun", "world", "stream");

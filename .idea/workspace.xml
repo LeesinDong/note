@@ -8,14 +8,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="java8 &amp; guava学习完结">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/策略/LambdaProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/策略/Original.java" afterDir="false" />
+    <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/ddd/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/ddd/vo/PasswordCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/ddd/vo/UserNameVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第8讲_collections/table/TableExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第8讲_collections/table/TableExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/重试/Retry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/模板/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/ObjectsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/ObjectsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CloserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第4讲_File/CloserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第7讲_cache/引用/ReferenceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第7讲_cache/引用/ReferenceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction4_$$$groupby_partition$$$.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction4_$$$groupby_partition$$$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第7讲_filter_distinct_skip_limit_map_flatmap/StreamMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第7讲_filter_distinct_skip_limit_map_flatmap/StreamMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第9讲_numberic_streams/NumericStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第9讲_numberic_streams/NumericStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +62,12 @@
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/IntSummaryStatistics.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/heima/stream/max.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第5讲_stream介绍/SimpleStream.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Optional.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/guava/第7讲_cache/引用/ReferenceExample.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第5讲_stream/第6讲_创建stream/CreateStream.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/模板/Template.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第2讲_Lambda_return/LambdaExpression.java" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/Apple.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/StopWatchExample.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
@@ -471,9 +479,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix" />
     <MESSAGE value="java8 &amp; guava学习完结" />
-    <option name="LAST_COMMIT_MESSAGE" value="java8 &amp; guava学习完结" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

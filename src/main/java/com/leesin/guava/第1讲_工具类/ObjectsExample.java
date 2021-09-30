@@ -13,7 +13,7 @@ import java.util.Calendar;
  * @QQ: 532500648
  ***************************************/
 public class ObjectsExample {
-    // cr 本质：主要为了生成hashCode equals方法，和自动生成的没区别，本质一样的。不是强烈推荐使用
+    // cr 本质：主要为了生成hashCode equal方法, jdk7有与之对应的两个放阿飞
     //  就连个方法 hashCoe 和equals
 
     public static void main(String[] args) {
@@ -68,6 +68,7 @@ public class ObjectsExample {
 
             Guava guava = (Guava) obj;
 
+            // 等价于jdk的Objects.equals 防止空指针
             return Objects.equal(this.manufacturer, guava.manufacturer)
                     && Objects.equal(this.version, guava.version)
                     && Objects.equal(this.releaseDate, guava.releaseDate);
