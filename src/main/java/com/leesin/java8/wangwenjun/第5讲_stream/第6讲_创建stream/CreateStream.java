@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -94,6 +95,15 @@ public class CreateStream {
         return Stream.generate(Math::random).limit(10);
     }
 
+
+    /**
+     * 7 rang()
+     * @return
+     */
+    private static IntStream createStreamFromRange() {
+        // 每次通过相同的函数返回值 无限创建元素，所以这里也limit
+        return IntStream.range(1, 2);
+    }
 
     public void test() throws IOException {
         ArrayList<Integer> list = Lists.newArrayList(1, 2, 3);
