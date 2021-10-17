@@ -16,7 +16,7 @@ public class CollectorIntroduce {
 
     /**
      * cr collector的作用
-     *  1 reducing summarizing聚合和汇总
+     *  1 reducing（maxby、minby、sumingInt、averagingInt、joining） summarizing聚合和汇总
      *  2 grouping 分组
      *  3 partition 分片
      */

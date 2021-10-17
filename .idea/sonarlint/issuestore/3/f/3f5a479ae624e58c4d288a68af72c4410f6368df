@@ -1,0 +1,25 @@
+
+O
+java:S1854"9Remove this useless assignment to local variable "List3".(›İ­
+O
+java:S1854"9Remove this useless assignment to local variable "List2".(ä‚”
+O
+java:S1854"9Remove this useless assignment to local variable "List1".(÷«¯Ä
+@
+java:S1481"*Remove this unused "List1" local variable.(÷«¯Ä
+@
+java:S1481"*Remove this unused "List2" local variable.(ä‚”
+@
+java:S1481"*Remove this unused "List3" local variable.(›İ­
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+[
+java:S16124"@Replace this lambda with method reference 'String::toUpperCase'.(„ÃïÙıÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(„ÃïÙıÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(ÏÑµ
+F
+java:S5960S"+Remove this assertion from production code.(±íûîüÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷«¯Ä
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä‚”
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›İ­
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ß«œ

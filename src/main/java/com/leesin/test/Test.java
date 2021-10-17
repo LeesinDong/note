@@ -2,113 +2,30 @@ package com.leesin.test;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executors;
-
+/**
+ * @author Leesin Dong
+ * @since Created in 2021/10/9 3:40 下午
+ */
 @Slf4j
-class Test {
-    public static void main(String[] args) throws Exception {
-        // throwa();
-        CompletableFuture<Object> a = CompletableFuture.supplyAsync(() -> {
-                    try {
-                        Thread.sleep(1);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    return 1;
-                }, Executors.newFixedThreadPool(100))
-                .thenApply(i -> {
-                    log.info("1");
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    throw new RuntimeException("a");
-                });
-
-        CompletableFuture<Object> a1 = CompletableFuture.supplyAsync(() -> {
-                    try {
-                        Thread.sleep(1);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    return 1;
-                }, Executors.newFixedThreadPool(100))
-                .thenApply(i -> {
-                    log.info("1");
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    throw new RuntimeException("a");
-                });
-        CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf(a, a1);
-        voidCompletableFuture.join();
-
-        // .handleAsync((i, e) -> {
-                //     try {
-                //         Thread.sleep(5000);
-                //     } catch (InterruptedException ez) {
-                //         ez.printStackTrace();
-                //     }
-                //     log.info("2");
-                //     log.info("", e);
-                //     return 1;
-                // });
-                // .whenComplete((i, e) -> {
-                //     try {
-                //         Thread.sleep(5000);
-                //     } catch (InterruptedException ez) {
-                //         ez.printStackTrace();
-                //     }
-                //     log.info("3");
-                //     log.info("", e);
-                // });
-                // .thenRun(() -> {
-                //     try {
-                //         Thread.sleep(5000);
-                //     } catch (InterruptedException ez) {
-                //         ez.printStackTrace();
-                //     }
-                //     log.info("4");
-                //     throw new RuntimeException("b");
-                // });
-                // .exceptionally((e) -> {
-                //     try {
-                //         Thread.sleep(5000);
-                //     } catch (InterruptedException ez) {
-                //         ez.printStackTrace();
-                //     }
-                //     log.info("", e);
-                //     return null;
-                // });
-                // .thenAccept(i -> {
-                //     log.info("5");
-                // })
-                // .exceptionally((e) -> {
-                //     log.info("-", e);
-                //     return null;
-                // });
-
-        System.out.println("aaa");
+public class Test {
+    public static int num=1;
+    public static void main(String[] args)  {
+        int result;
+        result = num();
+        System.out.println(result);//输出结果为1003
+        System.out.println(num);//输出结果为1001
     }
-
-    public static void throwa() {
-        // throw new RuntimeException();
-        InputStream inputStream = new InputStream() {
-            @Override
-            public int read() throws IOException {
-                return 0;
-            }
-        };
-        try {
-            inputStream.read();
-        } catch (IOException e) {
-            e.printStackTrace();
+    private static int num() {
+        try{
+            int b=4/0;
+            System.out.println(111);
+            System.out.println(111);
+            System.out.println(111);
+            return num = num+1000;
+        }catch(Exception e){
+            // return num = num+1000;
+        }finally {
+            return num+2;
         }
     }
 }

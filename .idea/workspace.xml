@@ -9,7 +9,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36145ba0016784a84a0dbecb21a0347360c6cb50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f5a479ae624e58c4d288a68af72c4410f6368df" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/mix/CollectorsAction1_$$$collectingAndThen$$$_mapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompeletableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/ObjectsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/ObjectsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第2讲_functions/FunctionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第2讲_functions/FunctionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/策略/LambdaProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/me/design/model/策略/LambdaProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorIntroduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/CollectorIntroduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/mix/CollectorsAction1_$$$collectingAndThen_averaging$$$_mapping_counting_summing_maxBy_minBy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/mix/CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/mix/CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/mix/CollectorsAction3_$$Join.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction3_reducing_$$$summarizing_join$$$.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction3_reducing_$$$summarizing_join$$$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction4_$$$groupby_partition$$$.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction4_$$$groupby_partition$$$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第1讲_FunctionalInterface/FilterApple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +59,12 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/ComplexApple.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/FutureInAction略.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0-sources.jar!/com/google/common/base/Preconditions.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction2.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/security/AccessController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/test/Test.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompeletableTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction3略.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/PrintStream.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collection.java" root0="SKIP_INSPECTION" />
@@ -79,6 +98,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/StopWatchExample.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第4讲_方法引用_函数推导_consumer例子/MethodReference.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/test/IntegerNPE.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -114,7 +134,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/leesin/test" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/leesin/guava" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -143,7 +163,7 @@
       <recent name="com.leesin.guava.第1讲_utilties" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapsExampleTest.testFilter">
+  <component name="RunManager" selected="Application.Test (1)">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -157,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第8讲_collections.Test" />
+    <configuration name="LambdaProcess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.me.design.model.策略.LambdaProcess" />
       <module name="note" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leesin.guava.第8讲_collections.*" />
+          <option name="PATTERN" value="com.leesin.java8.me.design.model.策略.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第7讲_cache.testTest" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.test.Test" />
       <module name="note" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leesin.guava.第7讲_cache.*" />
+          <option name="PATTERN" value="com.leesin.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,18 +203,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreadLocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.heightConcurrent.threadLocal.ThreadLocalDemo" />
       <module name="note" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leesin.java8.wangwenjun.第12讲_collector.mix.*" />
+          <option name="PATTERN" value="com.leesin.heightConcurrent.threadLocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.leesin.java8.wangwenjun.第12讲_collector.mix" />
-      <option name="MAIN_CLASS_NAME" value="com.leesin.java8.wangwenjun.第12讲_collector.mix.CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,19 +249,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.testTest" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="JUnit.CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.test" />
+      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.LambdaProcess" />
+      <item itemvalue="Application.ThreadLocalDemo" />
       <item itemvalue="JUnit.MapsExampleTest.testTransform" />
       <item itemvalue="JUnit.MapsExampleTest.testFilter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.ThreadLocalDemo" />
+        <item itemvalue="Application.LambdaProcess" />
         <item itemvalue="JUnit.MapsExampleTest.testFilter" />
         <item itemvalue="JUnit.MapsExampleTest.testTransform" />
-        <item itemvalue="JUnit.CollectorsAction2_$$$toCollection_toList_toSet_toMap_toConcurrentMap$$$.test" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.testTest" />
       </list>
     </recent_temporary>
   </component>

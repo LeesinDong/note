@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
-import static com.leesin.java8.wangwenjun.第12讲_collector.mix.CollectorsAction1_$$$collectingAndThen_averaging$$$_mapping_counting_summing_maxBy_minBy.menu;
+import static com.leesin.java8.wangwenjun.第12讲_collector.mix.CollectorsAction1_$$$collectingAndThen$$$_mapping.menu;
 
 
 public class CollectorsAction3_reducing_$$$summarizing_join$$$ {
@@ -28,7 +28,116 @@ public class CollectorsAction3_reducing_$$$summarizing_join$$$ {
         testSummarizingInt();
     }
 
+    /**
+     * cr counting collector里面有几个元素
+     */
+    private static void testCounting() {
+        System.out.println("testCounting");
+        Optional.of(menu.stream().collect(Collectors.counting())).ifPresent(System.out::println);
+    }
 
+    /**
+     * maxBy 最大的xxx的实体 【和直接stream.max一样的效果】
+     */
+    private static void testMaxBy() {
+        System.out.println("testMaxBy");
+        menu.stream().collect(Collectors.maxBy(Comparator.comparingInt(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+
+
+
+
+
+    /**
+     * minBy 最小的
+     */
+    private static void testMinBy() {
+        System.out.println("testMinBy");
+        menu.stream().collect(Collectors.minBy(Comparator.comparingInt(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+
+    /**
+     * cr Summing 求和 【等价于 mapToInt().sum()】
+     */
+    /**
+     * summingDouble
+     */
+    private static void testSummingDouble() {
+        System.out.println("testSummingDouble");
+        Optional.of(menu.stream().collect(Collectors.summingDouble(Dish::getCalories)))
+                .ifPresent(System.out::println);
+        Optional.of(menu.stream().map(Dish::getCalories).mapToInt(Integer::intValue).sum())
+                .ifPresent(System.out::println);
+    }
+    /**
+     * summingLong
+     */
+    private static void testSummingLong() {
+        System.out.println("testSummingLong");
+        Optional.of(menu.stream().collect(Collectors.summingLong(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+    /**
+     * summingInt
+     */
+    private static void testSummingInt() {
+        System.out.println("testSummingInt");
+        Optional.of(menu.stream().collect(Collectors.summingInt(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+
+    /**
+     * cr averaging 平均数
+     */
+    private static void testAveragingDouble() {
+        System.out.println("testAveragingDouble");
+        Optional.ofNullable(menu.stream().collect(Collectors.averagingDouble(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+
+    private static void testAveragingInt() {
+        System.out.println("testAveragingInt");
+        Optional.ofNullable(menu.stream().collect(Collectors.averagingInt(Dish::getCalories)))
+                .ifPresent(System.out::println);
+    }
+
+    private static void testAveragingLong() {
+        System.out.println("testAveragingLong");
+        Optional.ofNullable(menu.stream().collect(Collectors.averagingLong(Dish::getCalories)))
+                .ifPresent(System.out::println);
+
+    }
+
+
+    /**
+     * cr join
+     */
+    /**
+     * join 对stream里面的值进行连接，【注意：collectors.joining()前面必须是charSequence，即String】
+     */
+    private static void testJoining() {
+        System.out.println("testJoining");
+        Optional.of(menu.stream().map(Dish::getName).collect(Collectors.joining()))
+                .ifPresent(System.out::println);
+    }
+    /**
+     * join 带分隔符【每个单词中间加分隔符 1,2,3 只有中间有】
+     */
+    private static void testJoiningWithDelimiter() {
+        System.out.println("testJoiningWithDelimiter");
+        Optional.of(menu.stream().map(Dish::getName).collect(Collectors.joining(",")))
+                .ifPresent(System.out::println);
+    }
+    /**
+     * join 带分隔符、前缀、后缀【前缀、后缀是在加了分隔符的字符串的开始和结束, eg:Names[1,2,3]】
+     */
+    private static void testJoiningWithDelimiterAndPrefixAndSuffix() {
+        System.out.println("testJoiningWithDelimiterAndPrefixAndSuffix");
+        Optional.of(menu.stream().map(Dish::getName).collect(Collectors.joining(",", "Names[", "]")))
+                .ifPresent(System.out::println);
+    }
 
 
 

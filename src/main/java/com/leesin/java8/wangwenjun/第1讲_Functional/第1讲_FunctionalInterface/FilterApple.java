@@ -17,14 +17,6 @@ public class FilterApple {
      * Predicate等是特殊的定义好的Functional
      */
 
-    /**
-     * cr Functional【接口】(匿名内部【类】|| 实际接口子类)(语法糖) => lambda（语法糖） => 方法引用 => 一件事
-     *  本质：接口本身完全等价于 lambda, 可以 lambda.方法(参数)
-     *
-     *      接口子类 = 匿名子类
-     */
-
-
 
     @FunctionalInterface
     public interface AppleFilter {

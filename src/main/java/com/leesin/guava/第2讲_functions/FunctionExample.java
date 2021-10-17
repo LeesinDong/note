@@ -170,6 +170,7 @@ public class FunctionExample {
         *  guava: Preconditions.checkArgument(Predicates.and((i) -> (int)i < 2, (i) -> (int)i > 0).apply(1));
         *  8: Preconditions.checkArgument(((Predicate<Integer>) i -> i > 0).and((i) -> i < 2).test(1));
         *  =============================================================================
+        *
         * Java8中的Predicate没有and和or方法
         */
        com.google.common.base.Predicates.and((i) -> (int)i < 2, (i) -> (int)i > 0).apply(1);
