@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Test {
 
@@ -66,5 +67,15 @@ public class Test {
                 .collect(Collectors.toList());
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf(collect.toArray(new CompletableFuture[collect.size()]));
         voidCompletableFuture.join();
+
+        List<CompletableFuture<Integer>> collect1 = Stream.of(1, 2, 3)
+                .map(i -> CompletableFuture.supplyAsync(() -> {
+                    return i;
+                }))
+                .collect(Collectors.toList());
+
+        List<Integer> collect2 = collect1.stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
     }
 }

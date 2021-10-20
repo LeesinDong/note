@@ -14,11 +14,11 @@ import static java.util.stream.Collectors.toList;
 public class CompletableFutureInAction4 {
 
     public static void main(String[] args) throws InterruptedException  {
-        // 单个
+        // 单个  同步操作
         /**
          * cr【1】 supplyAsync 构建一个异步的任务，参数是supplier，有返回值
          */
-
+        // 链式声明，以下都是
         /**
          * 本质都一样，都是等待前一个任务完成，进行链式操作
          *
@@ -35,7 +35,6 @@ public class CompletableFutureInAction4 {
          *  特殊情况：链式api中的执行时间极短的时候，会阻塞主线程，但是链式api的async方法不会阻塞
          *  https://jverson.com/thinking-in-java/juc/completefuture.html  搜：诡异
          */
-
         /**
          * cr 1234 基本一样
          * cr 【2】 thenApply、thenAccept(void)         和thenApply的区别 没有返回值
@@ -46,7 +45,6 @@ public class CompletableFutureInAction4 {
         CompletableFuture.supplyAsync(() -> 1)
                 .thenApply(i -> Integer.sum(i, 10))
                 .thenAccept(System.out::println);
-
         /**
          * cr【3】 handle、【4】whenComplete（返回上一级任务的结果）、【5】exceptionally【5】thenRun
          * handle、whenComplete
@@ -71,6 +69,10 @@ public class CompletableFutureInAction4 {
                  * 出现异常：whenComplete返回结果为null，异常为上级任务的异常；
                  */
                 .whenComplete((v, t) -> System.out.println(v))
+                .exceptionally(e -> {
+                    System.out.println(e);
+                    return null;
+                })
                 /**
                  * thenRun 没有入参，所有操作都做完再做一个操作，thenRunAsync异步的
                  * 这里没有入参只是打印了一个回车，可以用来最后完了之后做一个统计
@@ -81,7 +83,12 @@ public class CompletableFutureInAction4 {
 
 
 
-        // 多个组合completableFuture
+
+
+
+
+
+        // 多个组合completableFuture   异步操作
         /**
          * cr 1 thenCompose 第二个future操作第一个future完成时的结果
          *   2 thenCombine、3 thenAcceptBoth 操作两个future结果，一个function 一个consumer
