@@ -118,13 +118,13 @@ public class CompletableFutureInAction4 {
                 }); // 后面还可以跟thenRun
         Thread.sleep(1000L);
 
-
-
-
-
         // 全部、任意完成
         // cr runAfterBoth、runAfterEither 两个 | 一个执行完了之后执行runnable，runnable不能接受内容
-        //  applyToEither（function）、acceptEither（consumer），function和consumer能接受返回的内容，都是任意一个，谁快用谁
+        //
+        //
+        //    cr applyToEither（function）、acceptEither（consumer）
+        //     function和consumer能接受返回的内容，都是任意一个，谁快用谁
+        //     对立于上面的 thenCombine  thenAcceptBoth
         /**
          * 【10】runAfterBoth   两个future都执行完了之后，执行runnable
          */
