@@ -10,7 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第15讲_completableFuture/CompletableFutureInAction4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/rsgp/CollectorsAction4_$$$groupby_partition$$$.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第12讲_collector/slightly/CustomerCollectorAction.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/PreconditionsTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/Executor.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/guava/第1讲_工具类/JoinerTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第2讲_Lambda_return/LambdaExpression.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/leesin/java8/wangwenjun/第1讲_Functional/第3讲_四个特殊的Functional/LambdaUsage.java" root0="FORCE_HIGHLIGHTING" />
@@ -120,7 +122,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showRenderedDocs" value="false" />

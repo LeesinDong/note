@@ -14,6 +14,10 @@ public class Demo {
 
     private int i;
 
+    public Demo() {
+
+    }
+
     public void incr() {
         i++;
     }
