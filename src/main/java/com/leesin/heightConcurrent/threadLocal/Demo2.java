@@ -9,7 +9,7 @@ package com.leesin.heightConcurrent.threadLocal;
  */
 
 public class Demo2 {
-    //共享 & 可变数据
+    //共享 & 可变数据   不用static，是一个共享 可变 的状态 即可
     static Demo demo = new Demo();
 
     // 返回同一个对象引用 demo

@@ -1,5 +1,7 @@
 package com.leesin.heightConcurrent.threadLocal;
 
+import lombok.Data;
+
 import java.lang.ref.WeakReference;
 
 /**
@@ -9,6 +11,7 @@ import java.lang.ref.WeakReference;
  * @version: ${VERSION}
  * @modified By:
  */
+@Data
 public class Demo {
      A a;
 

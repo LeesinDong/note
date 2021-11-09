@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/SharedDateDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/Demo2.java" afterDir="false" />
@@ -148,7 +149,7 @@
       <recent name="com.leesin.guava.第1讲_utilties" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="JUnit.SharedDateDemo.test">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -158,6 +159,19 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CycliBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leesin.heightConcurrent.CyclicBarrier.CycliBarrierDemo" />
+      <module name="note" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leesin.heightConcurrent.CyclicBarrier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,33 +215,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapsExampleTest.testFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SharedDateDemo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="note" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leesin.guava.第8讲_collections.map.*" />
+          <option name="PATTERN" value="com.leesin.heightConcurrent.threadLocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.leesin.guava.第8讲_collections.map" />
-      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第8讲_collections.map.MapsExampleTest" />
-      <option name="METHOD_NAME" value="testFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapsExampleTest.testTransform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="note" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leesin.guava.第8讲_collections.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.leesin.guava.第8讲_collections.map" />
-      <option name="MAIN_CLASS_NAME" value="com.leesin.guava.第8讲_collections.map.MapsExampleTest" />
-      <option name="METHOD_NAME" value="testTransform" />
+      <option name="PACKAGE_NAME" value="com.leesin.heightConcurrent.threadLocal" />
+      <option name="MAIN_CLASS_NAME" value="com.leesin.heightConcurrent.threadLocal.SharedDateDemo" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,16 +235,16 @@
       <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.LambdaProcess" />
       <item itemvalue="Application.ThreadLocalDemo" />
-      <item itemvalue="JUnit.MapsExampleTest.testTransform" />
-      <item itemvalue="JUnit.MapsExampleTest.testFilter" />
+      <item itemvalue="Application.CycliBarrierDemo" />
+      <item itemvalue="JUnit.SharedDateDemo.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SharedDateDemo.test" />
+        <item itemvalue="Application.CycliBarrierDemo" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.ThreadLocalDemo" />
         <item itemvalue="Application.LambdaProcess" />
-        <item itemvalue="JUnit.MapsExampleTest.testFilter" />
-        <item itemvalue="JUnit.MapsExampleTest.testTransform" />
       </list>
     </recent_temporary>
   </component>
