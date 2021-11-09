@@ -9,6 +9,7 @@ import org.junit.Test;
 public class SharedDateDemo {
     // 共享基本数据类型支持
     Integer i = 0;
+    // 就是对象字段
     // 共享对象不支持，有并发问题，不是每个ThreadLocal一个副本
     Demo demo = new Demo();
     private final ThreadLocal threadLocal =ThreadLocal.withInitial(()-> i);
