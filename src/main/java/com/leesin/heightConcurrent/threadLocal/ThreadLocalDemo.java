@@ -33,6 +33,9 @@ public class ThreadLocalDemo {
                 String s = strLocal.get();
                 strLocal.set(s+" world");//何止修改以后的值
                 System.out.println(Thread.currentThread().getName()+":"+num.get()+" -》 " +strLocal.get() );
+                // 在每个线程定义的最后
+                // 删除当前线程的ThreadLocal key 为null 的value
+                strLocal.remove();
             },"Thread-"+i);
         }
 

@@ -9,7 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bd7a42-6f59-4e1d-b8fa-582795d39bd3" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/StopWatchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/guava/第3讲_StopWatch/StopWatchExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/SharedDateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/SharedDateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/ThreadLocalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/heightConcurrent/threadLocal/ThreadLocalDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,19 +234,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test (1)" />
-      <item itemvalue="Application.LambdaProcess" />
-      <item itemvalue="Application.ThreadLocalDemo" />
       <item itemvalue="Application.CycliBarrierDemo" />
+      <item itemvalue="Application.LambdaProcess" />
+      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.ThreadLocalDemo" />
       <item itemvalue="JUnit.SharedDateDemo.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SharedDateDemo.test" />
-        <item itemvalue="Application.CycliBarrierDemo" />
-        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.ThreadLocalDemo" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.LambdaProcess" />
+        <item itemvalue="Application.CycliBarrierDemo" />
       </list>
     </recent_temporary>
   </component>
